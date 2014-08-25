@@ -1,0 +1,550 @@
+# Affix file Babyish Dictionary for Mozilla
+# Copyright (c) 2007-2012, Tom K. C. Chiu
+# Built from scratch. Released under the GNU General Public License
+# Please see readme.txt and license.txt for further information.
+#
+# R 0.2.42.20131021, 2013-10-22
+# R36:
+# 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
+# 2. Ädd c / k konvörçion
+# 3. Ädd -ed / -en konvörçion
+# R37:
+# 1. Duplikeiten koud ripleisen
+# 2. Ädd kondiçion when wörd ended with "-ùp" & "-on"
+# R39:
+# 1. Ädd -èn / -àn + -ik --> -enik / -änik
+# 2.
+# R40:
+# R41:
+# R42:
+# 1. Ädd trans- 
+#
+SET UTF-8
+
+# Modified TRY sequence based on .aff generated from raw wordlist, created through wordlist2hunspell
+TRY iensortkaldpmäufbyvgjwš hç-zcSTMPAGHBLYKDINxJF­R.OáWUEìqVXC1QZ328ā976540èž'öèùàüāīōŧŋéóǐđẑčŝ
+
+MAP 86
+MAP Aa
+MAP Āā
+MAP Áá
+MAP Ǎǎ
+MAP Àà
+MAP Ää
+MAP Ǟǟ
+MAP Ä́ä́
+MAP Ä̌ä̌
+MAP Ä̀ä̀
+MAP Bb
+MAP Cc
+MAP Çç
+MAP Čč
+MAP Ĉĉ
+MAP Dd
+MAP Đđ
+MAP Ee
+MAP Ēē
+MAP Éé
+MAP Ěě
+MAP Èè
+MAP Ff
+MAP Gg
+MAP Ĝĝ
+MAP Hh
+MAP Ĥĥ
+MAP Ii
+MAP Īī
+MAP Íí
+MAP Ǐǐ
+MAP Ìì
+MAP Jj
+MAP Kk
+MAP Ll
+MAP Mm
+MAP M̄m̄
+MAP Ḿḿ
+MAP M̌m̌
+MAP M̀m̀
+MAP Nn
+MAP N̄n̄
+MAP Ńń
+MAP Ňň
+MAP Ǹǹ
+MAP Ŋŋ
+MAP Ŋ̄ŋ̄
+MAP Ŋ́ŋ́
+MAP Ŋ̌ŋ̌
+MAP Ŋ̀ŋ̀
+MAP Oo
+MAP Ōō
+MAP Óó
+MAP Ǒǒ
+MAP Òò
+MAP Öö
+MAP Ȫȫ
+MAP Ö́ö́
+MAP Ö̌ö̌
+MAP Ö̀ö̀
+MAP Pp
+MAP Qq
+MAP Rr
+MAP Řř
+MAP Ss
+MAP Šš
+MAP Ŝŝ
+MAP Tt
+MAP Ŧŧ
+MAP Uu
+MAP Ūū
+MAP Úú
+MAP Ǔǔ
+MAP Ùù
+MAP Üü
+MAP Ǖǖ
+MAP Ǘǘ
+MAP Ǚǚ
+MAP Ǜǜ
+MAP Vv
+MAP Ww
+MAP Xx
+MAP Yy
+MAP Zz
+MAP Žž
+MAP Ẑẑ
+
+BREAK 3
+BREAK --
+BREAK ─
+BREAK -
+
+REP 128
+REP -- -
+REP a á
+REP a à
+REP a ǎ
+REP a ä
+REP ā ä
+REP a ā
+REP ae ä
+REP a ei
+REP ai ä
+REP ai i
+REP a o
+REP at ät
+REP at ätt
+REP au o
+REP au ò
+REP aw ō
+REP ay ei
+REP cat keiç
+REP c ç
+REP c k
+REP ch č
+REP ci sai
+REP ck k
+REP ck kk
+REP c s
+REP ç s
+REP ç t
+REP cti kçi
+REP dd d
+REP dge j
+REP dg j
+REP dh đ
+REP e é
+REP e è
+REP e ě
+REP e ē
+REP ed en
+REP ee ē
+REP e.g. F.i.
+REP eg F.i.
+REP e i
+REP e ī
+REP er ā
+REP er ö
+REP f ff
+REP ff f
+REP fh ŧ
+REP ge j
+REP ge je
+REP ger jèr
+REP gh f
+REP gh ĥ
+REP ght t
+REP gi ji
+REP gn ŋ
+REP ho o
+REP i ai
+REP i ài
+REP ì ài
+REP i e
+REP i í
+REP i ì
+REP i ǐ
+REP i ī
+REP ĩ ī
+REP ii ī
+REP i iy
+REP ī iy
+REP ine ain
+REP ism isùm
+REP ist isùmā
+REP i ùses
+REP i y
+REP lès les
+REP l r
+REP mi mǐ-
+REP mi- mǐ-
+REP mme m
+REP nès iti
+REP nès iviti
+REP ng ŋ
+REP ñ ŋ
+REP o è
+REP ogue og
+REP olnès iliti
+REP o ó
+REP o ò
+REP o ǒ
+REP o ō
+REP ör ö
+REP or ō
+REP ot ò
+REP ou au
+REP ough u
+REP ough ùf
+REP ou ū
+REP ow aw
+REP ph f
+REP r l
+REP s ç
+REP sr ŝ
+REP ŝ s
+REP š s
+REP s ŝ
+REP š ŝ
+REP s š
+REP ŝ š
+REP t c
+REP teit t
+REP th đ
+REP th ŧ
+REP ti çi
+REP ť ŧ
+REP t teit
+REP ur ör
+REP us ùs
+REP u ú
+REP u ù
+REP u ǔ
+REP u ū
+REP u yu
+REP x ks
+REP y i
+REP y ŋ
+REP zh ẑ
+REP zh ž
+REP zr ẑ
+
+PFX 3 Y 1
+PFX 3 0 kon .
+
+PFX 4 Y 1
+PFX 4 0 pro .
+
+PFX 6 Y 1
+PFX 6 0 mal .
+
+PFX A Y 1
+PFX A 0 mis .
+
+PFX B Y 1
+PFX B 0 ovèr .
+
+PFX C Y 1
+PFX C 0 undèr .
+
+PFX D Y 1
+PFX D 0 rī .
+
+PFX E Y 1
+PFX E 0 pri .
+
+PFX F Y 1
+PFX F 0 post .
+
+PFX G Y 1
+PFX G 0 híu .
+
+PFX H Y 1
+PFX H 0 inter .
+
+PFX I Y 1
+PFX I 0 intra .
+
+PFX J Y 1
+PFX J 0 ikstra .
+
+PFX K Y 2
+PFX K 0 mǐ [^i]
+PFX K 0 mǐ- i
+
+PFX L Y 1
+PFX L 0 but .
+
+PFX M Y 1
+PFX M 0 trans .
+
+PFX N Y 1
+PFX N 0 pan .
+
+PFX O Y 1
+PFX O 0 out .
+
+PFX P Y 3
+PFX P 0 supā .
+PFX P 0 hàipā .
+PFX P 0 ulutora .
+
+PFX Q Y 1
+PFX Q 0 dis .
+
+SFX R Y 2
+SFX R 0 àns [^aäā]
+SFX R 0 -àns aäā
+
+PFX S Y 1
+PFX S 0 non .
+
+PFX T Y 1
+PFX T 0 sùb .
+
+PFX U Y 1
+PFX U 0 ùn .
+
+SFX V Y 2
+SFX V 0 ga [^g]
+SFX V 0 -ga g
+
+SFX W Y 4
+SFX W 0 ùn [^aeiouäöünl]
+SFX W 0 nùn [aeiouäöü]
+SFX W 0 lùn l
+SFX W n llùn n
+
+PFX X Y 1
+PFX X 0 di .
+
+SFX Y Y 2
+SFX Y 0 -iš [iīíǐì]
+SFX Y 0 iš [^iīíǐì]
+
+SFX Z Y 4
+SFX Z y yàbol [^aeiou]y 
+SFX Z y yàboliti [^aeiou]y
+SFX Z 0 àbol
+SFX Z 0 àboliti .
+
+SFX 1 Y 18
+SFX 1 0 ikol . 
+SFX 1 er rikol er 
+SFX 1 0 ikol [^e]r 
+SFX 1 0 atikol [aeiou]m 
+SFX 1 0 ikol [^aeiou]m 
+SFX 1 0 tikol ma 
+SFX 1 a ikol [^m]a 
+SFX 1 y ikol y 
+SFX 1 0 ikol [^aemry] 
+SFX 1 0 ikolli . 
+SFX 1 er rikolli er 
+SFX 1 0 ikolli [^e]r 
+SFX 1 0 atikolli [aeiou]m 
+SFX 1 0 ikolli [^aeiou]m 
+SFX 1 0 tikolli ma 
+SFX 1 a ikolli [^m]a 
+SFX 1 y ikolli y 
+SFX 1 0 ikolli [^aemry]
+
+SFX 2 Y 1
+SFX 2 0 ùs .
+
+SFX 7 Y 4
+SFX 7 0 isùm
+SFX 7 0 isùmā
+SFX 7 0 isùmās
+SFX 7 0 isùmik
+
+SFX 8 Y 2
+SFX 8 0 -gga g
+SFX 8 0 gga [^g]
+
+SFX a Y 2
+SFX a 0 es [cçčĉsšŝzžẑ]
+SFX a 0 s [^cçčĉsšŝzžẑ]
+
+SFX b Y 9
+SFX b 0 ed .
+SFX b 0 en .
+SFX b 0 iŋ .
+SFX b -on ed-on -on
+SFX b -on en-on -on
+SFX b -on iŋ-on -on
+SFX b -ùp ed-ùp -ùp
+SFX b -ùp en-ùp -ùp
+SFX b -ùp iŋ-ùp -ùp
+
+SFX c Y 1
+SFX c 0 zo .
+
+SFX d Y 12
+SFX d 0 eiçion [^bdpst]
+SFX d 0 eiçions [^bdpst]
+SFX d 0 içion dd
+SFX d 0 içions dd
+SFX d d çion [^d]d
+SFX d d çions d
+SFX d d pçion [bp]
+SFX d d pçions [bp]
+SFX d s çion s
+SFX d s çions s
+SFX d t çions t
+SFX d t çion t
+
+SFX e Y 1
+SFX e 0 ru .
+
+SFX f Y 5
+SFX f 0 ed .
+SFX f 0 en .
+SFX f 0 iŋ .
+SFX f 0 iŋli .
+SFX f 0 iŋs .
+
+SFX g Y 4
+SFX g 0 ivli [st]
+SFX g 0 iv [st]
+SFX g 0 tiv [aio]
+SFX g 0 tivli [aio]
+
+SFX h Y 20
+SFX h 0 eiçion [^bdpst]
+SFX h 0 eiçionol [^bdpst]
+SFX h 0 eiçionolli [^bdpst]
+SFX h 0 eiçions [^bdpst]
+SFX h d çion d
+SFX h d çionol d
+SFX h d çionolli d
+SFX h d çions d
+SFX h d pçion [bp]
+SFX h d pçionol [bp]
+SFX h d pçionolli [bp]
+SFX h d pçions [bp]
+SFX h s çionolli s
+SFX h s çionol s
+SFX h s çion s
+SFX h s çions s
+SFX h t çionolli t
+SFX h t çionol t
+SFX h t çions t
+SFX h t çion t
+
+SFX i Y 2
+SFX i 0 ā .
+SFX i 0 ās .
+
+SFX j Y 1
+SFX j 0 li .
+
+SFX k Y 2
+SFX k 0 ènt [mn]
+SFX k 0 mènt [^mn]
+
+SFX l Y 2
+SFX l 0 er .
+SFX l 0 est .
+
+SFX m Y 1
+SFX m 0 fol .
+
+SFX n Y 1
+SFX n 0 bu .
+
+SFX o Y 4
+SFX o 0 k [iīíǐì]
+SFX o 0 ik [^iīíǐì]
+SFX o èn enik èn
+SFX o àn änik àn
+
+SFX p Y 6
+SFX p 0 loji .
+SFX p 0 lojiā .
+SFX p 0 lojiās .
+SFX p 0 lojik .
+SFX p 0 lojikol .
+SFX p 0 lojikolli .
+
+SFX q Y 24
+SFX q 0 tais a 
+SFX q 0 ais [^l]
+SFX q l ilais [^aeiou]l
+SFX q l ais [aeiou]l
+SFX q 0 taises a 
+SFX q 0 aises [^l] 
+SFX q l ilaises [^aeiou]l
+SFX q l aises [aeiou]l
+SFX q ùm ais ùm 
+SFX q 0 ais [^ù]m 
+SFX q s s ais 
+SFX q 0 ais [^i]s
+SFX q l ilaised [^aeiou]l
+SFX q l aised [aeiou]l
+SFX q ùm aised ùm 
+SFX q 0 aised [^ù]m 
+SFX q s sed ais 
+SFX q 0 aised [^i]s
+SFX q l ilaisiŋ [^aeiou]l 
+SFX q l aisiŋ [aeiou]l 
+SFX q ùm aisiŋ ùm 
+SFX q 0 aisiŋ [^ù]m 
+SFX q s siŋ ais 
+SFX q 0 aisiŋ [^i]s
+
+SFX r Y 3
+SFX r s ol ks
+SFX r t çol t
+SFX r 0 ol [^t]
+
+SFX s Y 1
+SFX s 0 sīk .
+
+SFX t Y 1
+SFX t 0 nai .
+
+SFX u Y 1
+SFX u 0 lès .
+
+SFX v Y 1
+SFX v 0 nès .
+
+SFX w Y 9
+SFX w 0 ikol . 
+SFX w er rikol er 
+SFX w 0 ikol [^e]r 
+SFX w 0 atikol [aeiou]m 
+SFX w 0 ikol [^aeiou]m 
+SFX w 0 tikol ma 
+SFX w a ikol [^m]a 
+SFX w y ikol y 
+SFX w 0 ikol [^aemry]
+
+SFX x Y 1
+SFX x 0 na .
+
+SFX y Y 2
+SFX y 0 -i [iīíǐì]
+SFX y 0 i [^iīíǐì]
+
+SFX z Y 2
+SFX z 0 ö [^t]
+SFX z t čö t
