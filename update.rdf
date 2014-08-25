@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<RDF:Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}">
+		<em:updates>
+			<RDF:Seq>
+				<RDF:li resource="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.1.3.20100310105313"/>	
+				<RDF:li resource="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.3.6.20110307083656"/>	
+				<RDF:li resource="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.4.6.20120119024823"/>	
+      			</RDF:Seq>
+		</em:updates>
+		<em:version>2.4.6.20120119024823</em:version>
+		<em:updateLink>https://sxp.yimg.com/ei/toolbar/ff/yahootoolbar-2.4.6.20120119024823_intl-_sc-_pc-_dc-v2_upgd.xpi</em:updateLink>
+	</RDF:Description>
+
+  
+   <!-- 2.1.3.20100310105313-->
+    <RDF:Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.1.3.20100310105313">
+     <em:version>2.1.3.20100310105313</em:version>
+     <em:targetApplication>
+       <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>3.7a3pre</em:maxVersion>
+        <em:updateLink>https://sxp.yimg.com/ei/toolbar/ff/yahootoolbar-2.1.3.20100310105313_intl-_sc-_pc-_dc-v2_upgd.xpi</em:updateLink>
+       </Description>
+     </em:targetApplication>
+  </RDF:Description>
+
+   <!-- 2.3.6.20110307083656-->
+    <RDF:Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.3.6.20110307083656">
+     <em:version>2.3.6.20110307083656</em:version>
+     <em:targetApplication>
+       <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.9</em:minVersion>
+        <em:maxVersion>4.0.*</em:maxVersion>
+        <em:updateLink>https://sxp.yimg.com/ei/toolbar/ff/yahootoolbar-2.3.6.20110307083656_intl-_sc-_pc-_dc-v2_upgd.xpi</em:updateLink>
+       </Description>
+     </em:targetApplication>
+  </RDF:Description>
+
+   <!--  2.4.6.20120119024823-->
+    <RDF:Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:2.4.6.20120119024823">
+     <em:version>2.4.6.20120119024823</em:version>
+     <em:targetApplication>
+       <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0</em:minVersion>
+        <em:maxVersion>12.0a1</em:maxVersion>
+        <em:updateLink>https://sxp.yimg.com/ei/toolbar/ff/yahootoolbar-2.4.6.20120119024823_intl-_sc-_pc-_dc-v2_upgd.xpi</em:updateLink>
+       </Description>
+     </em:targetApplication>
+  </RDF:Description>
+
+</RDF:RDF>
