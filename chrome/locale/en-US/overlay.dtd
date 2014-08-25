@@ -1,9 +1,8 @@
 ﻿<!ENTITY babyish_spellchecker.label "Neidè lokolaisen menuitem">
 <!ENTITY babyish_spellcheckerContext.label "Neidè Menuitem">
 <!ENTITY babyish_spellcheckerContext.accesskey "N">
-<!ENTITY babyish_spellcheckerToolbarButton.label "Neidè Tūlbār Bùtton">
-<!ENTITY babyish_spellcheckerToolbarButton.tooltip "This is your toolbar bùttòn!">
-<!ENTITY babyish_spellcheckerSidebar.label "Neidè Saidbār">
-<!ENTITY babyish_spellcheckerToolbar.name  "iksampol">
-<!ENTITY babyish_spellcheckerToolbar.label "Nigè-wa Tūlbār dè 1-gè iksampol. You can hide it under View &gt; toolbars &gt; &babyish_spellcheckerToolbar.name;">
- No newline at end of file
+<!ENTITY babyish_spellcheckerToolbarButton.label "My Toolbar Button">
+<!ENTITY babyish_spellcheckerToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY babyish_spellcheckerSidebar.label "Your Sidebar">
+<!ENTITY babyish_spellcheckerToolbar.name  "example">
+<!ENTITY babyish_spellcheckerToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &babyish_spellcheckerToolbar.name;">
