@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://babyish_spellchecker/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://babyish_spellchecker/locale/overlay.dtd">
+<overlay id="babyish_spellchecker-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="ff-overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="babyish_spellchecker-strings" src="chrome://babyish_spellchecker/locale/overlay.properties"/>
+  </stringbundleset>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="babyish_spellchecker-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   label="&babyish_spellcheckerToolbarButton.label;" tooltiptext="&babyish_spellcheckerToolbarButton.tooltip;"
+                   oncommand="babyish_spellchecker.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+</overlay>

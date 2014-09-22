@@ -5,7 +5,7 @@
   <Description about="urn:mozilla:install-manifest">
         <em:type>64</em:type> <!-- 64 : Dictionary Pack -->
         <em:id>bb@mimosapudica.org</em:id>
-        <em:unpack>true</em:unpack>
+        <em:unpack>false</em:unpack>
         <em:version>0.2.42.20131022</em:version>
         <em:name>Babyish Spellchecker</em:name>
         <em:description>Babyish Spellcheck for checking spellling in Babyish</em:description>
@@ -84,37 +84,39 @@
     <em:maxVersion>0.9.90</em:maxVersion>
       </Description>
     </em:targetApplication>
-    <em:updateURL>https://go.microsoft.com/fwlink/?LinkID=139711</em:updateURL>
     <!-- Front End MetaData -->
     <em:localized>
     	<Description>
-		<em:locale>bb-BK</em>
-		<em:name>Babyish spelčekā</em:name>
-    		<em:description>Babyish (bb-BK) Spellchecker for Firefox</em:description>
+    		<em:locale>bb-BK</em>
+		    <em:name>Babyish spelčekā</em:name>
+    		<em:description>Babyish (bb-BK) Spelčeka für Firefox</em:description>
     		<em:creator>Tom K. C. Chiu</em:creator>
-    		<em:homepageURL>http://www.mimosapudica.org/Language/Babyish</em:homepageURL>
+    		<em:homepageURL>https://github.com/tomchiukc/babyishdictionary</em:homepageURL>
     		<em:iconURL>chrome://babyish_spelling_dictionary/skin/spellcheck.png</em:iconURL>
-	</Description>      
+        <em:aboutURL>chrome://babyish_spelling_dictionary/content/about.xul</em:aboutURL>
+	    </Description>      
     </em:localized>
     <em:localized>
     	<Description>
-		<em:locale>en-US</em>
-		<em:name>Babyish spellchecker</em:name>
+		    <em:locale>en-US</em>
+		    <em:name>Babyish spellchecker</em:name>
     		<em:description>Babyish (bb-BK) Spellchecker for Firefox</em:description>
     		<em:creator>Tom K. C. Chiu</em:creator>
-    		<em:homepageURL>http://www.mimosapudica.org/Language/Babyish</em:homepageURL>
+    		<em:homepageURL>https://github.com/tomchiukc/babyishdictionary</em:homepageURL>
     		<em:iconURL>chrome://babyish_spelling_dictionary/skin/spellcheck.png</em:iconURL>
-	</Description>      
+        <em:aboutURL>chrome://babyish_spelling_dictionary/content/about.xul</em:aboutURL>
+	    </Description>      
     </em:localized>
     <em:localized>
     	<Description>
-		<em:locale>zh-TW</em>
-		<em:name>B文拼字檢查</em:name>
+		    <em:locale>zh-TW</em>
+		    <em:name>B文拼字檢查</em:name>
     		<em:description>Firefox用的B文拼字檢查</em:description>
     		<em:creator>石添小草</em:creator>
-    		<em:homepageURL>http://www.mimosapudica.org/Language/Babyish</em:homepageURL>
+    		<em:homepageURL>https://github.com/tomchiukc/babyishdictionary</em:homepageURL>
     		<em:iconURL>chrome://babyish_spelling_dictionary/skin/spellcheck.png</em:iconURL>
-	</Description>      
+        <em:aboutURL>chrome://babyish_spelling_dictionary/content/about.xul</em:aboutURL>
+	    </Description>      
     </em:localized>
 </Description>
 </RDF>
