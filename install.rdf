@@ -89,7 +89,7 @@
     	<Description>
     		<em:locale>bb-BK</em>
 		    <em:name>Babyish spelčekā</em:name>
-    		<em:description>Babyish (bb-BK) Spelčeka für Firefox</em:description>
+    		<em:description>Babyish (bb-BK) spelčekā für Firefox</em:description>
     		<em:creator>Tom K. C. Chiu</em:creator>
     		<em:homepageURL>https://github.com/tomchiukc/babyishdictionary</em:homepageURL>
     		<em:iconURL>chrome://babyish_spelling_dictionary/skin/spellcheck.png</em:iconURL>
