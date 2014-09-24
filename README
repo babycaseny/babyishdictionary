@@ -8,11 +8,13 @@
  Komment:
 : These files are licensed under LGPL. The word list for the Babyish Medical dictionary is maintained by Babycasèny Sencrol Gavèrnmènt. (babycaseny@gmail.com) These files are licensed under LGPL.
 
-== Disklämā ==
+Disklämā
+--------
 Dikçionari dè kontent wa iksträkten from jigùmdè Babyish tekst.
 If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 
-== Dikçionari ==
+Dikçionari
+----------
 *Ùpdeit from v.43:
 ** wijèt(s) --> widjèt(s) (cf. gädjèt)
 *Ùpdeit from v.42:
@@ -168,7 +170,8 @@ If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 **Rewrite contents of "bb.dic" based on file layout of "hsb.dic" from Upper Sorbian dictionary and wordlists.db from FLToolbox.
 **Rewrite contents of "bb.aff" based on the first, second and fourth entry of Upper Sorbian dictionary and comments from Austrlian English dictionary.
 
-== Affiks fayl ==
+Affiks fayl
+-----------
 
 Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
 Yusiŋ R 0.2.39.20120705 vörçion gut  2012-07-05.
@@ -189,3 +192,7 @@ Yusiŋ R 0.2.39.20120705 vörçion gut  2012-07-05.
 *Ùpdeit from v.37:
 *# Duplikeiten koud ripleisen
 *# Ädd kondiçion when wörd ended with "-ùp" & "-on"
+
+Haifeneiçion
+------------
+Jamsi-wa Haifeneiçion mi-sùpport.
