@@ -11,7 +11,7 @@ dictionary is maintained by Babycas?ny Sencrol Gav?rnm?nt.
 (babycaseny@gmail.com) These files are licensed under LGPL.
 
 Babyish Dictionary for Mozilla
-\Copyright (C) 2007-2008.  Tom K. C. Chiu
+Copyright (C) 2007-2008.  Tom K. C. Chiu
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -22,17 +22,24 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
+
 You should have received a copy of the GNU General Public License along
 with this program (license.txt) if not, write to: 
+
 The Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
 I can be contacted via email: babycaseny [at] gmail [period] com
-This dictionary was written from scratch after lexical analysis using the Field Linguists' Toolbox, a linguistic software product from SIL.
-I copied the structure of this spellcheck installer from installer of other languages, these languages are listed below:
+
+This dictionary was written from scratch after lexical analysis 
+using the Field Linguists' Toolbox, a linguistic software product 
+from SIL.  I copied the structure of this spellcheck installer from 
+installer of other languages, these languages are listed below:
 * English (Australian)
 * Estonian
 * Upper Sorbian
 Diskl?m?
+
 --------
 Dik?ionari d? kontent wa ikstr?kten from jig?md? Babyish tekst.
 If ?ra fainden, pl?s kont?kt Babyish sencrol gav?rnm?nt d? webs?it.
