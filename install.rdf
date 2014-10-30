@@ -2,7 +2,7 @@
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
+  <Description>
         <em:type>64</em:type> <!-- 64 : Dictionary Pack -->
         <em:id>bb@mimosapudica.org</em:id>
         <em:unpack>false</em:unpack>
@@ -42,11 +42,14 @@
 	<em:maxVersion>22.0</em:maxVersion>
       </Description>
     </em:targetApplication>
+    <em:targetApplication>
       <Description><!-- Android -->
         <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
 	<em:minVersion>12.0</em:minVersion>
 	<em:maxVersion>21.0a1</em:maxVersion>
       </Description>
+    </em:targetApplication>
+    <em:targetApplication>
     <!-- Flock d? yus?bol v?r?ions -->
       <Description>
         <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
@@ -87,7 +90,7 @@
     <!-- Front End MetaData -->
     <em:localized>
     	<Description>
-    		<em:locale>bb-BK</em>
+    		<em:locale>bb-BK</em:locale>
 		    <em:name>Babyish spel?ek?</em:name>
     		<em:description>Babyish (bb-BK) spel?ek? f?r Firefox</em:description>
     		<em:creator>Tom K. C. Chiu</em:creator>
@@ -98,7 +101,7 @@
     </em:localized>
     <em:localized>
     	<Description>
-		    <em:locale>en-US</em>
+		    <em:locale>en-US</em:locale>
 		    <em:name>Babyish spellchecker</em:name>
     		<em:description>Babyish (bb-BK) Spellchecker for Firefox</em:description>
     		<em:creator>Tom K. C. Chiu</em:creator>
@@ -109,7 +112,7 @@
     </em:localized>
     <em:localized>
     	<Description>
-		    <em:locale>zh-TW</em>
+		    <em:locale>zh-TW</em:locale>
 		    <em:name>B?????</em:name>
     		<em:description>Firefox??B?????</em:description>
     		<em:creator>????</em:creator>
