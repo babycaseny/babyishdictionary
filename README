@@ -1,7 +1,7 @@
- Review date:   2014-05-09
+ Review date:   2014-11-01
  Author:        Tom K. C. Chiu
- Release:       V0.2.43.20140509
- Filename:      Babyish_spelčekā-0.2.43.20140509-fx.xpi
+ Release:       V0.2.44.20141101
+ Filename:      Babyish_spelčekā-0.2.44.20141101-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
 
@@ -10,21 +10,26 @@
  dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
  These files are licensed under LGPL.
  
- Babyish Dictionary for Mozilla
- Copyright (C) 2007-2008.  Tom K. C. Chiu
+ Babyish Dictionary for Mozilla V0.2.43.20140509
+
+ This Babyish Dictionary for Spell Checking is maintained by
+ Tom K. C. Chiu <tomchiukc@gmail.com>.
+
+ Copyright © 2007-2014.  Tom K. C. Chiu <tomchiukc@gmail.com>
  
- This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- 
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- 
- You should have received a copy of the GNU General Public License along
- with this program (license.txt) if not, write to: 
+This dictionary is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This dictionary is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this dictionary.  If not, see <http://www.gnu.org/licenses/>
+or write to:
  
  The Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
@@ -46,6 +51,7 @@ If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 
 Dikçionari
 ----------
+*Ùpdeit from v.44:
 *Ùpdeit from v.43:
 ** wijèt(s) --> widjèt(s) (cf. gädjèt)
 *Ùpdeit from v.42:

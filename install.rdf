@@ -3,13 +3,13 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description>
-        <em:type>64</em:type> <!-- 64 : Dictionary Pack -->
         <em:id>bb@mimosapudica.org</em:id>
-        <em:unpack>false</em:unpack>
+        <em:unpack>true</em:unpack>
         <em:version>0.2.43.20140509</em:version>
         <em:name>Babyish Spellchecker</em:name>
-        <em:description>Babyish Spellcheck for checking spellling in Babyish</em:description>
+        <em:description>Babyish Spellcheck dictionary</em:description>
         <em:creator>Tom K. C. Chiu</em:creator>
+        <em:type>64</em:type> <!-- 64 : Dictionary Pack -->
     <!--
     target Application information.  Details please
     see https://addons.mozilla.org/en-US/firefox/pages/appversions
@@ -18,7 +18,7 @@
       <Description><!-- Firefox d? yus?bol v?r?ions -->
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>2.0a1</em:minVersion>
-	<em:maxVersion>32.*</em:maxVersion>
+        <em:maxVersion>34.0</em:maxVersion>
       </Description>
     </em:targetApplication>
     <em:targetApplication>
