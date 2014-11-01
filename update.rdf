@@ -13,7 +13,7 @@
                             <Description>
                                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                                 <em:minVersion>2.0</em:minVersion>
-	                        <em:maxVersion>32.*</em:maxVersion>
+	                        <em:maxVersion>34.*</em:maxVersion>
                                 <em:updateLink>https://github.com/tomchiukc/babyishdictionary/blob/master/firefox/babyishspelcek-0.2.44.20141101.xpi?raw=true</em:updateLink>
                                 <em:updateInfoURL>https://github.com/tomchiukc/babyishdictionary/blob/master/firefox/updateinfo.xml</em:updateInfoURL>
                             </Description>
