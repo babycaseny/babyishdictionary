@@ -180,10 +180,9 @@ MAP Yy
 MAP Zz
 MAP Žž
 MAP Ẑẑ
-
-
 MAP ﬁ(fi)
 MAP ﬂ(fl)
+
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
 REP 128
