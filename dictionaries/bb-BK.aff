@@ -1,9 +1,9 @@
 # Affix file Babyish Dictionary for Mozilla
-# Copyright (c) 2007-2012, Tom K. C. Chiu
+# Copyright (c) 2007-2014, Tom K. C. Chiu
 # Built from scratch. Released under the GNU General Public License
-# Please see readme.txt and license.txt for further information.
+# Please see README and license.txt for further information.
 #
-# R 0.2.44.20141101, 2014-11-01
+# R 0.2.44.20141110, 2014-11-10
 # R36:
 # 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
@@ -20,6 +20,7 @@
 # 1. Ädd trans- 
 # R44:
 # 1. Updeit ruls akkording tu Svendish 
+# 2. Ädd REP kv --> kw
 #
 SET UTF-8
 
@@ -185,7 +186,7 @@ MAP ﬂ(fl)
 
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
-REP 128
+REP 129
 REP -- -
 REP a á
 REP a à
@@ -260,6 +261,7 @@ REP ism isùm
 REP ist isùmā
 REP i ùses
 REP i y
+REP kv kw
 REP lès les
 REP l r
 REP mi mǐ-

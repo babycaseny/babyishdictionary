@@ -1,2 +1,4 @@
 LAISÈNSÈS:
 Speliŋ Dikçionari: LGPL, GPL
+Tesaurùs (sinònims en törms rileiten): LGPL, GPL
+Haifèneiçion: LGPL, GPL
