@@ -1,6 +1,6 @@
  Review date:   2014-11-01
  Author:        Tom K. C. Chiu
- Release:       V0.2.44.20141101
+ Release:       V0.2.44.20141111
  Filename:      Babyish_spelčekā-0.2.44.20141110-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
