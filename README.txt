@@ -1,7 +1,7 @@
- Review date:   2014-11-01
+ Review date:   2014-12-01
  Author:        Tom K. C. Chiu
- Release:       V0.2.44.20141111
- Filename:      Babyish_spelčekā-0.2.44.20141110-fx.xpi
+ Release:       V0.2.45.20141201
+ Filename:      Babyish_spelčekā-0.2.45.20141201-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
 
@@ -51,6 +51,8 @@ If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 
 Dikçionari
 ----------
+*Ùpdeit from v.45:
+** òtomäçion --> òtomeiçion
 *Ùpdeit from v.44:
 ** Merged the dictionary plugin for Mozilla products and OOo/LibreOffice products
 *Ùpdeit from v.43:
@@ -58,7 +60,7 @@ Dikçionari
 *Ùpdeit from v.42:
 ** Wörds kaunt in dikçionari: 11,132 --> 11,200
 *Ùpdeit from v.41:
-**spellchecker for SeaMonkey spliten from mainstream, because of different requirement for plùgins of SeaMonkey 2.15.
+**spellchecker for SeaMonkey spliten from meinstrīm, bikos SeaMonkey 2.15 dè diffèrènt rīkwairmènt für plùgins.
 ** ständardais ek-/ik- tu [[Bbd:Ek|ek-]]
 *Updeit from v.40:
 ** guest --> [[Bbd:gäst|gäst]]
@@ -212,8 +214,9 @@ Affiks fayl
 -----------
 
 Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
-Yusiŋ R 0.2.39.20120705 vörçion gut 2012-07-05.
+Yusiŋ R 0.2.45.20141201 vörçion gut 2014-12-01.
 
+*Ùpdeit from v.45:
 *Ùpdeit from v.44:
 *# ädded REP kv --> kw
 *Ùpdeit from v.42:

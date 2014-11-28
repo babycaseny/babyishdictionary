@@ -6,7 +6,7 @@
         <em:id>bb@mimosapudica.org</em:id>
         <em:name>Babyish spellchecker</em:name>
         <em:unpack>true</em:unpack>
-        <em:version>0.2.44.20141111</em:version>
+        <em:version>0.2.45.20141201</em:version>
         <em:description>Babyish Spellcheck dictionary</em:description>
         <em:creator>Tom K. C. Chiu</em:creator>
     	<em:homepageURL>https://github.com/tomchiukc/babyishdictionary</em:homepageURL>
