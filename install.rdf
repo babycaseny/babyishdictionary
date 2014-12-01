@@ -37,18 +37,11 @@
       </Description>
     </em:targetApplication>
     <em:targetApplication>
-      <Description><!-- Fennec/Mobile -->
-        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
-        <em:minVersion>0.1</em:minVersion>
-	<em:maxVersion>22.0</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-    <em:targetApplication>
     <!-- ChatZilla -->
       <Description>
         <em:id>{59c81df5-4b7a-477b-912d-4e0fdf64e5f2}</em:id>
-    <em:minVersion>0.9.77</em:minVersion>
-    <em:maxVersion>0.9.90</em:maxVersion>
+	<em:minVersion>0.9.77</em:minVersion>
+	<em:maxVersion>0.9.90</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- Front End MetaData -->
