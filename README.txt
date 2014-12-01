@@ -10,7 +10,7 @@
  dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
  These files are licensed under LGPL.
  
- Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.44.20141101
+ Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.45.20141201
 
  This Babyish Dictionary for Spell Checking is maintained by
  Tom K. C. Chiu <tomchiukc@gmail.com>.
