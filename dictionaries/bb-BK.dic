@@ -1,5 +1,4 @@
-5766
-a
+5776
 á
 à
 ǎ
@@ -22,7 +21,6 @@ abyus/ib
 abyusiv
 ačiv/ib
 äd/a
-Ädàm
 ädded-on
 äddeiçionol/j
 äddeiçion/r
@@ -180,7 +178,6 @@ ançiènt
 Andorra
 Android
 Aŋtrĥe
-Ängùs
 Ānhuī
 äni
 anime
@@ -252,8 +249,9 @@ Arial
 Ariŧmätiks
 .arj
 arkaivenī/a
+arkaiviŋ/U
 arkaiv/rba
-Arkänsàs
+Arkänsàs/o
 ārmàbol
 ārm/c
 ārmiŋ
@@ -265,7 +263,6 @@ army
 ärogun
 ärokondiçioniŋ/a
 ärokondiçion/r
-Āron
 äroplein/a
 äroport/a
 ärošǐ
@@ -293,8 +290,8 @@ assain/b
 assainmènt/a
 assasineit/b
 ässènt/bd
-ässept/dbf
-ässeptènt
+ässeptàbol
+ässept/dbfhR
 assess/k
 assessmènt/a
 ässet
@@ -345,8 +342,6 @@ ayu
 Azärbayjan/oY
 äzzol/a
 B
-Babbyblū
-Bābilu
 baby/a
 Babycasèny
 babyian/a
@@ -1977,7 +1972,7 @@ impend/b
 implai/b
 implaikeiçion
 implikeiçion
-implimènt/bh
+implimènt/b
 implimènteiçion
 importànt
 import/Rabi
@@ -1998,6 +1993,7 @@ indikeitiv
 indipendènçi
 indipendèns
 indipendènt/j
+indivaidol
 Indonesia/oY
 indor
 indùlj
@@ -2108,6 +2104,7 @@ invèntori
 invest/k
 invok/d
 invokeit
+invoken
 involven
 IP
 iPad
@@ -2441,13 +2438,14 @@ klouŧ
 klouŧs
 klov
 klùb/a
+klùstèr/a
+klùstèrais/hdb
 koala
 kōč/ib
 kof
-Koi
 koiksist/b
 koin/a
-koineij
+koineij/bdh
 koineijmil/a
 kok
 kokonùt/a
@@ -2567,7 +2565,7 @@ konsīv
 konsīved
 konsīven
 konsol
-konsolideit/bh
+konsolideit/dbh
 konsonànt/a
 konsörveiçion/r
 konstànt
@@ -2980,6 +2978,7 @@ Mancóu
 Mandarin
 Manila
 mänipyuleit/bd
+manipyuleiting
 männeij/bik
 manwa
 manwagā
@@ -3638,7 +3637,7 @@ Ostreilia/o
 òtoditekt/db
 òtofill/b
 ÒtoLiŋk/a
-òtomät/o1db
+òtomeit/db1o
 òtoseiv
 òtoseiven
 òtostart
@@ -3719,6 +3718,9 @@ Pārman
 parrot/a
 parsàbol
 pars/bi
+parteiçion
+parteiçionen
+parteiçioniŋ
 parti/a
 partikols
 partikyular/j
@@ -3942,14 +3944,15 @@ praiveiçi
 praiveit
 praiz/a
 praizen
-prei/a
+präktis/b
+präy/bi
+prei/ab
 preis/b
 pres/b
 presidènçi
 presidènt/a
 presidèntol
 press/b
-prey/ib
 pridikt/bd
 priditömin/dkb
 priempt/d
@@ -3970,6 +3973,7 @@ printout
 pripäk/b
 pripär/db
 pripend/b
+pririkwest/dhb
 prisais
 prisaision
 prisent/Db
@@ -4018,7 +4022,8 @@ pronaun/a
 pronaunseit/d
 propèr/j
 propèrti/a
-propos/b
+propos/br
+proposol/a
 proses/ia
 prosesiŋ
 prosesiŋstep/a
@@ -4143,6 +4148,7 @@ rial
 rialiti
 ribel/d
 ribeleit/b
+rībūten
 rič
 rīč
 rīdà/a
@@ -4229,6 +4235,7 @@ ristrikt/d
 ristrikted
 ristrikten
 risùlt/b
+Rita
 rītaip
 rītein/b
 rītrai
@@ -4249,6 +4256,7 @@ roiyol
 roiyolti
 rokk/ay
 rol/b
+Roma
 Romaji
 Roman
 řoŋam
@@ -4504,8 +4512,7 @@ silkwōm/a
 silsigǎn
 silvèr
 similar/j
-simplifai/b
-simpolifaien
+simpolifai/bdh
 simpol/lj
 simpol-na
 simyuleit/bd
@@ -5280,13 +5287,11 @@ UnRAR
 Ùpdeitiŋs
 ùper
 ùpgreid/bfa
-Ùpgreids
 ùpkomiŋ
 ùploudā/a
 ùploud/Db
 ùploudiŋ/Da
 ùplouds
-Ùplouds
 ùpon
 ùpteik/D
 ùptu
@@ -5294,19 +5299,20 @@ Ural/o
 uridè
 uri/V
 URL
-Urugwai
+Urugwai/o
 UST
 uwe
-Uyĥūr
+Uyĥūr/oY
 V
 vairùs/ra
 vàitol
 vàitolais
-vàkeiçion
+vàkeit/dbh
 välī/a
 välid
 välideit/dbf
 välley/a
+välyuais/hbd
 välyu/da
 vän/a
 vänilla
@@ -5449,8 +5455,8 @@ when
 whīt
 whītstarč
 whoul
+widjèt/a
 widŧ
-wijèt/a
 Wikçionari
 wīkdei/a
 wīkend
