@@ -189,19 +189,23 @@ MAP ﬁ(fi)
 MAP ﬂ(fl)
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
-REP 135
+REP 137
 REP -- -
 REP cat  keiç
 REP ing  iŋ
 REP ex   iks
 REP er   ā
 REP s    ç
+REP tion çion
 REP re   rī
 REP pre  pri
 REP de   di
 REP ment mènt
+REP qu   kw
+REP kv   kw
 REP uc   ùk
 REP ism  isùm
+REP c ç
 REP a á
 REP a à
 REP a ǎ
@@ -219,7 +223,6 @@ REP au o
 REP au ò
 REP aw ō
 REP ay ei
-REP c ç
 REP c k
 REP ch č
 REP ci sai
@@ -272,7 +275,6 @@ REP ine ain
 REP ist isùmā
 REP i ùses
 REP i y
-REP kv kw
 REP lès les
 REP l r
 REP mi mǐ-
@@ -309,7 +311,6 @@ REP t c
 REP teit t
 REP th đ
 REP th ŧ
-REP ti çi
 REP ť ŧ
 REP t teit
 REP ur ör

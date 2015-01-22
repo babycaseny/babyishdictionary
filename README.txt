@@ -1,10 +1,62 @@
-== Dikçionari ==
+ Review date:   2015-01-21
+ Author:        Tom K. C. Chiu
+ Release:       V0.2.46.20150121
+ Filename:      Babyish_spelčekā-0.2.46.20150121-fx.xpi
+ Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
+ Released for:  Firefox
+
+ Komment:
+ These files are licensed under LGPL. The word list for the Babyish Medikal 
+ dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
+ These files are licensed under LGPL.
+ 
+ Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.46.20150121
+
+ This Babyish Dictionary for Spell Checking is maintained by
+ Tom K. C. Chiu <tomchiukc@gmail.com>.
+
+ Copyright © 2007-2015.  Tom K. C. Chiu <tomchiukc@gmail.com>
+ 
+This dictionary is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This dictionary is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this dictionary.  If not, see <http://www.gnu.org/licenses/>
+or write to:
+ 
+ The Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ 
+ I can be contacted via email: babycaseny [at] gmail [period] com
+ 
+ This dictionary was written from scratch after lexical analysis 
+ using the Field Linguists' Toolbox, a linguistic software product 
+ from SIL.  I copied the structure of this spellcheck installer from 
+ installer of other languages, these languages are listed below:
+* English (Australian)
+* Estonian
+* Upper Sorbian
+
+Disklämā
+--------
+Dikçionari dè kontent wa iksträkten from jigùmdè Babyish tekst.
+If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
+
+Dikçionari
+----------
 *Ùpdeit from v.46:
 ** Steit en Steitùs dè diffèrèns in yuseij
 ** Vokäb saiz: 11,300
 ** invok/d, invokeit, invoken --> ?
 ** simplifai/bdh --> simpolifai/bdh
-* Ùpdeit from v.45:
+*Ùpdeit from v.45:
 ** òtomäçion --> òtomeiçion
 *Ùpdeit from v.44:
 ** Mörjen dikçionari plùgin für Mozilla prodùkts en OOo/LibreOffice prodùkts
@@ -162,3 +214,39 @@
 **Changed file format from ANSI to UTF-8.
 **Rewrite contents of "bb.dic" based on file layout of "hsb.dic" from Upper Sorbian dictionary and wordlists.db from FLToolbox.
 **Rewrite contents of "bb.aff" based on the first, second and fourth entry of Upper Sorbian dictionary and comments from Austrlian English dictionary.
+
+Affiks fayl
+-----------
+
+Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
+Yusiŋ R 0.2.46.20150121 vörçion gut 2015-01-21.
+
+*Ùpdeit from v.46:
+# araund 10 gè REP in haiher praioriti riordèred tu top.
+*Ùpdeit from v.45: (Mwu)
+*Ùpdeit from v.44:
+*# ädded REP kv --> kw
+*Ùpdeit from v.42:
+*Ùpdeit from v.41:
+*Ùpdeit from v.40:
+*Ùpdeit from v.39:
+*# Ädd -èn / -àn + -ik --> -enik / -änik
+*Ùpdeit from v.38:
+*Ùpdeit from v.37:
+*# Duplikeiten koud ripleisen
+*# Ädd kondiçion when wörd ended with "-ùp" & "-on"
+*Ùpdeit from v.36:
+*# Fiksen suffiks 'd' dè difaineiçion: -çion(s)
+*# Ädd c / k konvörçion
+*# Ädd -ed / -en konvörçion
+*Ùpdeit from v.37:
+*# Duplikeiten koud ripleisen
+*# Ädd kondiçion when wörd ended with "-ùp" & "-on"
+
+Haifeneiçion
+------------
+Ùndèr divelopmènt.
+
+Tesaurùs
+--------
+Ùndèr divelopmènt.
