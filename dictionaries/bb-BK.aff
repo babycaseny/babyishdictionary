@@ -96,7 +96,7 @@ COMPOUNDEND Y
 ONLYINCOMPOUND Z
 # copying ended
 
-MAP 88
+MAP 86
 MAP Aa
 MAP Āā
 MAP Áá
@@ -184,9 +184,6 @@ MAP Zz
 MAP Žž
 MAP Ẑẑ
 
-
-MAP ﬁ(fi)
-MAP ﬂ(fl)
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
 REP 137
