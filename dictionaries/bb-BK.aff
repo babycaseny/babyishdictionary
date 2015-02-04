@@ -1,9 +1,9 @@
 # Affix file Babyish Dictionary for Mozilla
-# Copyright (c) 2007-2014, Tom K. C. Chiu
+# Copyright (c) 2007-2015, Tom K. C. Chiu
 # Built from scratch. Released under the GNU General Public License
-# Please see README and license.txt for further information.
+# Please see README.txt and license.txt for further information.
 #
-# R 0.2.44.20141110, 2014-11-10
+# R 0.2.47.20150215, 2015-02-15
 # R36:
 # 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
@@ -21,6 +21,10 @@
 # R44:
 # 1. Updeit ruls akkording tu Svendish 
 # 2. Ädd REP kv --> kw
+# R46:
+# 1. Riordèr haih praioriti REP tu top.
+# R47:
+# 1. Ädd REP er/èr/ā
 #
 SET UTF-8
 
@@ -94,7 +98,7 @@ ONLYMAXDIFF
 #ONLYINCOMPOUND Z
 ## copying ended
 
-MAP 88
+MAP 86
 MAP Aa
 MAP Āā
 MAP Áá
@@ -181,13 +185,30 @@ MAP Yy
 MAP Zz
 MAP Žž
 MAP Ẑẑ
-MAP ﬁ(fi)
-MAP ﬂ(fl)
 
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
-REP 129
+REP 140
 REP -- -
+REP cat  keiç
+REP ing  iŋ
+REP ex   iks
+REP er   ā
+REP èr   ā
+REP er   èr
+REP ā	 èr
+REP s    ç
+REP tion çion
+REP re   rī
+REP pre  pri
+REP de   di
+REP ment mènt
+REP age  eij
+REP qu   kw
+REP kv   kw
+REP uc   ùk
+REP ism  isùm
+REP c ç
 REP a á
 REP a à
 REP a ǎ
@@ -205,8 +226,6 @@ REP au o
 REP au ò
 REP aw ō
 REP ay ei
-REP cat keiç
-REP c ç
 REP c k
 REP ch č
 REP ci sai
@@ -230,7 +249,6 @@ REP e.g. F.i.
 REP eg F.i.
 REP e i
 REP e ī
-REP er ā
 REP er ö
 REP f ff
 REP ff f
@@ -257,11 +275,9 @@ REP ii ī
 REP i iy
 REP ī iy
 REP ine ain
-REP ism isùm
 REP ist isùmā
 REP i ùses
 REP i y
-REP kv kw
 REP lès les
 REP l r
 REP mi mǐ-
@@ -269,7 +285,6 @@ REP mi- mǐ-
 REP mme m
 REP nès iti
 REP nès iviti
-REP ng ŋ
 REP ñ ŋ
 REP o è
 REP ogue og
@@ -288,7 +303,6 @@ REP ou ū
 REP ow aw
 REP ph f
 REP r l
-REP s ç
 REP sr ŝ
 REP ŝ s
 REP š s
@@ -300,7 +314,6 @@ REP t c
 REP teit t
 REP th đ
 REP th ŧ
-REP ti çi
 REP ť ŧ
 REP t teit
 REP ur ör
@@ -411,9 +424,11 @@ SFX W n llùn n
 PFX X Y 1
 PFX X 0 di .
 
-SFX Y Y 2
+SFX Y Y 4
 SFX Y 0 -iš [iīíǐì]
 SFX Y 0 iš [^iīíǐì]
+SFX Y 0 -iš [iīíǐì]lènd
+SFX Y 0 iš [^iīíǐì]lènd
 
 SFX Z Y 4
 SFX Z y yàbol [^aeiou]y 
