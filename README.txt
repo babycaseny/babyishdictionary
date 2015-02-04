@@ -1,7 +1,7 @@
- Review date:   2015-01-21
+ Review date:   2015-02-15
  Author:        Tom K. C. Chiu
- Release:       V0.2.46.20150121
- Filename:      Babyish_spelčekā-0.2.46.20150121-fx.xpi
+ Release:       V0.2.47.20150215
+ Filename:      Babyish_spelčekā-0.2.47.20150215-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
 
@@ -10,7 +10,7 @@
  dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
  These files are licensed under LGPL.
  
- Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.46.20150121
+ Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.47.20150215
 
  This Babyish Dictionary for Spell Checking is maintained by
  Tom K. C. Chiu <tomchiukc@gmail.com>.
@@ -219,8 +219,10 @@ Affiks fayl
 -----------
 
 Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
-Yusiŋ R 0.2.46.20150121 vörçion gut 2015-01-21.
+Yusiŋ R 0.2.47.20150215 vörçion gut 2015-02-15.
 
+*Ùpdeit from v.47:
+# Ädd REP er/èr/ā
 *Ùpdeit from v.46:
 # araund 10 gè REP in haiher praioriti riordèred tu top.
 *Ùpdeit from v.45: (Mwu)
