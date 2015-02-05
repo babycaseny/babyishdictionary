@@ -1,0 +1,3 @@
+Note that you have to manually refresh the contents of the zip file before you can fire up the update shellscript.  For details about how to package your xpi, refer to the link below:
+
+https://developer.mozilla.org/en-US/Add-ons/Extension_Packaging
