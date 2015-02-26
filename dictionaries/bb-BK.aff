@@ -3,7 +3,7 @@
 # Built from scratch. Released under the GNU General Public License
 # Please see README.txt and license.txt for further information.
 #
-# R 0.2.47.20150215, 2015-02-15
+# R 0.2.48.20150315, 2015-03-15
 # R36:
 # 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
@@ -25,6 +25,8 @@
 # 1. Riordèr haih praioriti REP tu top.
 # R47:
 # 1. Ädd REP er/èr/ā
+# R48:
+# 1. Ädd REP ción --> çion
 #
 SET UTF-8
 
@@ -184,7 +186,7 @@ MAP Ẑẑ
 
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
-REP 140
+REP 141
 REP -- -
 REP cat  keiç
 REP ing  iŋ
@@ -195,6 +197,7 @@ REP er   èr
 REP ā	 èr
 REP s    ç
 REP tion çion
+REP ción çion
 REP re   rī
 REP pre  pri
 REP de   di
