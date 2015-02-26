@@ -1,0 +1,11 @@
+11
+kompressed/X
+kompressiŋ/X
+kompression/Xa
+ikspress/dhb
+kompressiv/v
+ikspression/ar
+ikspressionol/j
+ikspressiv/v
+kompress/b
+kompressen/X
