@@ -6,23 +6,23 @@
          <em:updates>
              <Seq>
                  <li>
-                     <!-- 0.2.43.20140509 / All versions use the same update -->
-                     <Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:0.2.45.20141201">
-                         <em:version>0.2.45.20141201</em:version>
+                     <!-- 0.2.47.20150215 / All versions use the same update -->
+                     <Description about="urn:mozilla:extension:{635abd67-4fe9-1b23-4f01-e679fa7484c1}:0.2.47.20150215">
+                         <em:version>0.2.47.20150215</em:version>
                          <em:targetApplication>
                             <Description>
                                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                                 <em:minVersion>2.0</em:minVersion>
 	                        <em:maxVersion>37.*</em:maxVersion>
-                                <em:updateLink>https://github.com/BabyishGavernment/babyishdictionary/blob/master/firefox/BabyishSpelcek-0.2.45.20141201.xpi?raw=true</em:updateLink>
-                                <em:updateInfoURL>https://github.com/tomchiukc/babyishdictionary/blob/master/firefox/updateinfo.xml</em:updateInfoURL>
+                                <em:updateLink>https://github.com/babycaseny/babyishdictionary/blob/master/firefox/BabyishSpelcek-0.2.47.20150215.xpi?raw=true</em:updateLink>
+                                <em:updateInfoURL>https://github.com/babycaseny/babyishdictionary/blob/master/firefox/updateinfo.xml</em:updateInfoURL>
                             </Description>
                          </em:targetApplication>
                      </Description>
                  </li>
              </Seq>
          </em:updates>
-         <em:version>0.2.45.20141201</em:version>
-         <em:updateLink>https://github.com/BabyishGavernment/babyishdictionary/blob/master/firefox/BabyishSpelcek-0.2.45.20141201.xpi?raw=true</em:updateLink>
+         <em:version>0.2.47.20150215</em:version>
+         <em:updateLink>https://github.com/babycaseny/babyishdictionary/blob/master/firefox/BabyishSpelcek-0.2.47.20150215.xpi?raw=true</em:updateLink>
      </Description>
 </RDF>

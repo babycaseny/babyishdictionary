@@ -1,5 +1,4 @@
 5776
-á
 à
 ǎ
 ä
@@ -1298,7 +1297,7 @@ flip/b
 floppi/a
 floppidisk/a
 flopp/y
-flow/b
+flow/Bb
 flowt/b
 flowteit/d
 FLPS
@@ -1922,9 +1921,9 @@ iksport
 ikspörtais/db
 ikspört/ao
 iksporteit/d
-ikspresion/a
+ikspresçion/a
 ikspresiv/v
-ikspres/tdb
+ikspres/tdbh
 ikständ/d
 ikstend/bd
 ikstens
@@ -2105,6 +2104,7 @@ invest/k
 invok/d
 invokeit
 invoken
+involv
 involven
 IP
 iPad
@@ -2123,7 +2123,7 @@ ISM
 ISO
 ISP
 issu/ba
-issyu/a
+issyu/ba
 ist
 Istanbol
 istnorŧ
@@ -2432,7 +2432,7 @@ klōn/b
 klos/b
 kloŧ
 klot/b
-Kloŧiŋ
+kloŧiŋ/a
 kloŧs
 klouŧ
 klouŧs
@@ -2501,7 +2501,8 @@ kompätàboliti
 kompaund
 kompetènçi
 kompetènt
-kompit
+kompetitiv
+kompet/R
 komplein/b
 kompleks
 kompleksiti
@@ -2510,9 +2511,12 @@ komponènt/a
 kompos/b
 komposit/bd
 kompraisiŋ
-kompresçion/a
-kompression/X
+kompresçion/Xa
+kompression/Xa
 kompress/Xb
+ikspresçion/a
+ikspressiv/v
+ikspress/tdbh
 komprihens/bd
 komprihension
 komprihensiv
@@ -2656,6 +2660,7 @@ kout/b
 kòvār/b
 kòvèr/QObDU
 Koyasumi
+kraft/b
 krais/a
 kraitiria/a
 Krawkdragòn
@@ -2835,6 +2840,7 @@ libcaca
 libör/drh
 liböreit/b
 libörolwär/a
+LibreOffice
 lidi
 līd/ib
 līdiŋrōl
@@ -2987,13 +2993,12 @@ mänyuol/ja
 Maoisùm
 máōn
 Māori/oY
-Māori-leŋgueij
 Māori-pīpol
 mäpàbol
 mäp/ba
 Marakwa
 Maraŧon
-marjinolais/bh
+marjinolais/hbd
 marjin/r
 mark/ba
 market/a
@@ -3531,7 +3536,7 @@ odittreil
 off
 offār/b
 offis/ar
-offisol/a
+offisol/ja
 offlain
 oftèn
 oil/y
@@ -3897,7 +3902,7 @@ Pörl
 pörmit/db
 Pörol
 pörpol
-pörpòs
+pörpòs/a
 pörsònol
 pörspekt/ga
 pörspektiv/a
@@ -4120,7 +4125,9 @@ rejistèry
 rekommend/b
 Rekommendeiçions
 rekonais/db
+rekonaisen/U
 relativ/ja
+rendèr/b
 řenřuk
 rent
 reptillioritùs
@@ -4682,6 +4689,7 @@ sort/b
 šortkùt/a
 sörv/3dEbD
 sörvā/a
+sörvāspeis/a
 sörveis/a
 sörveisiŋ
 sörvenī
@@ -4764,7 +4772,7 @@ stäb/b
 städiùm/a
 staf
 staips
-staiyol
+staiyol/a
 stämp/a
 ständard/a
 ständardais/b
@@ -4862,7 +4870,7 @@ Suisài
 sùjjest/db
 suk
 sùk
-sùksesfol
+sùksesfol/j
 suksuk
 šūld
 sùm
@@ -4886,6 +4894,7 @@ Suomiiš
 sūp
 superā
 superāmarket
+superāset/a
 superāstā
 sùpplai/bik
 sùpplaimèntari
@@ -5327,11 +5336,7 @@ vendā
 Venežula
 venyu/a
 veri
-verifai
-verifaied
-verifaien
-verifai-iŋ
-verifai-ikeiçion
+verifai/bdh
 via
 vidio/a
 vidiorīkōdā
@@ -5345,9 +5350,7 @@ visited
 visit/i
 Vista
 vöčuol
-vöčuolais
-vöčuolaiseiçion
-vöčuolaisen
+vöčuolais/hdb
 VöčuolBoks
 Vöčuol-Rialiti
 Vogel
@@ -5355,12 +5358,13 @@ vokäb
 volkano/a
 volley
 volleybol/a
-volyùm
-vörb
+volyùm/a
 vörbos
+vörb/r
 vörçion/Ma
-vörtikol
-Vörtikolli
+vörcuol
+vörcuolais/dbh
+vörtikol/j
 vös/a2
 voten/X
 votiŋ
@@ -5761,3 +5765,4 @@ zúŋrǔi
 zúŋzùk
 zünsek
 ẑǔyào
+

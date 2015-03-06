@@ -1,7 +1,7 @@
- Review date:   2014-12-01
+ Review date:   2015-02-15
  Author:        Tom K. C. Chiu
- Release:       V0.2.45.20141201
- Filename:      Babyish_spelčekā-0.2.45.20141201-fx.xpi
+ Release:       V0.2.47.20150215
+ Filename:      Babyish_spelčekā-0.2.47.20150215-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
 
@@ -10,12 +10,12 @@
  dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
  These files are licensed under LGPL.
  
- Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.45.20141201
+ Babyish Dictionary for Mozilla and OpenOffice/LibreOffice V0.2.47.20150215
 
  This Babyish Dictionary for Spell Checking is maintained by
  Tom K. C. Chiu <tomchiukc@gmail.com>.
 
- Copyright © 2007-2014.  Tom K. C. Chiu <tomchiukc@gmail.com>
+ Copyright © 2007-2015.  Tom K. C. Chiu <tomchiukc@gmail.com>
  
 This dictionary is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -51,10 +51,15 @@ If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 
 Dikçionari
 ----------
+*Ùpdeit from v.46:
+** Steit en Steitùs dè diffèrèns in yuseij
+** Vokäb saiz: 11,300
+** invok/d, invokeit, invoken --> ?
+** simplifai/bdh --> simpolifai/bdh
 *Ùpdeit from v.45:
 ** òtomäçion --> òtomeiçion
 *Ùpdeit from v.44:
-** Merged the dictionary plugin for Mozilla products and OOo/LibreOffice products
+** Mörjen dikçionari plùgin für Mozilla prodùkts en OOo/LibreOffice prodùkts
 *Ùpdeit from v.43:
 ** wijèt(s) --> widjèt(s) (cf. gädjèt)
 *Ùpdeit from v.42:
@@ -62,7 +67,7 @@ Dikçionari
 *Ùpdeit from v.41:
 **spellchecker for SeaMonkey spliten from meinstrīm, bikos SeaMonkey 2.15 dè diffèrènt rīkwairmènt für plùgins.
 ** ständardais ek-/ik- tu [[Bbd:Ek|ek-]]
-*Updeit from v.40:
+*Ùpdeit from v.40:
 ** guest --> [[Bbd:gäst|gäst]]
 ** cuk --> [[Bbd:Cuĥt|cuĥt]]
 *Ùpdeit from v.39:
@@ -214,9 +219,13 @@ Affiks fayl
 -----------
 
 Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
-Yusiŋ R 0.2.45.20141201 vörçion gut 2014-12-01.
+Yusiŋ R 0.2.47.20150215 vörçion gut 2015-02-15.
 
-*Ùpdeit from v.45:
+*Ùpdeit from v.47:
+# Ädd REP er/èr/ā
+*Ùpdeit from v.46:
+# araund 10 gè REP in haiher praioriti riordèred tu top.
+*Ùpdeit from v.45: (Mwu)
 *Ùpdeit from v.44:
 *# ädded REP kv --> kw
 *Ùpdeit from v.42:
