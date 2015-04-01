@@ -1,4 +1,4 @@
-﻿var err = initInstall("Babyish spellchecker", "bb@mimosapudica.org", "0.2.47.20150215");
+﻿var err = initInstall("Babyish spellchecker", "bb@mimosapudica.org", "0.2.48.20150401");
 if (err != SUCCESS)
     cancelInstall();
 
