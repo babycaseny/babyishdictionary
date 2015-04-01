@@ -1,4 +1,4 @@
-5774
+5773
 á
 à
 ǎ
@@ -935,8 +935,7 @@ ditekt/dbi
 ditektiv/i
 ditel/a
 ditörmin/bdk
-divaiçion/T
-divaid/db
+divaid/dbT
 divais/a
 divelopā/a
 divelop/bFkE
@@ -1163,7 +1162,6 @@ fāfāšortbrēd
 fahok
 fǎi
 faibèr/ao
-fail/4a
 fainäns/arb
 faind/b
 fainenàmaunt
@@ -1215,12 +1213,11 @@ fast/Bl
 fätik
 faund/ib
 Faye
-fayl/4
+fayl/4a
 faylformät/a
 faylikstençion/a
 fayllist/a
 faylneim/a
-fayls
 faylsaiz/a
 faylsistèm/a
 fayltaip/a
@@ -1983,7 +1980,6 @@ implimènteiçion
 importànt
 import/Rabi
 impress/hdb
-impression/a
 imprūven
 imprūv/k
 in
@@ -2516,7 +2512,6 @@ komponènt/a
 kompos/b
 komposit/bd
 kompraisiŋ
-kompression/Xa
 kompress/Xbd
 komprihens/bd
 komprihension
@@ -3181,7 +3176,7 @@ mǐ-set
 mǐ-silekt
 mǐ-silekten
 misselliniùs
-mission
+mission/a
 missionari/a
 mǐ-steibol
 mitā/a
@@ -4126,8 +4121,8 @@ rejistèr/d
 rejistèren
 rejistèriŋ
 rejistèry
-rekommend/bdh
 rekommendeiçions
+rekommend/bdh
 rekonais/dbh
 rekonaisen/U
 relativ/ja
@@ -4364,7 +4359,7 @@ sàpzi
 Sàpzifā
 SAR
 šär/b
-šardiŋ
+šard/ab
 ŝark/a
 ŝarkfin
 šarp/b
@@ -4465,7 +4460,7 @@ seten/D
 setiŋ/a
 set/ODTK
 sets/T
-settolmènt
+settolmènt/a
 setùp/b
 severol
 Sheepmekeisony
@@ -4519,7 +4514,7 @@ silkwōm/a
 silsigǎn
 silvèr
 similar/j
-simpolifai/dhb
+simpolais/bdh
 simpol/lj
 simpol-na
 simyuleit/bd
@@ -4852,14 +4847,15 @@ sü
 sùb
 sùbhelŧi
 sùbjekt/a
+sùbjekteit/b
 sùbkommand
 sùbmit/bd
 sùbnet
 sùbörb/a
 sùbskraib/b
-sùbskraipçion
+sùbskraipçion/a
 sùbstàns/a
-Sùbstànseit
+sùbstànseit/b
 sùbstityut/db
 sùbtaitol
 sùbtaitoliŋ
@@ -4910,7 +4906,6 @@ sùpport/ib
 sùppous
 sùppressànt
 sùppress/bdh
-sùppression
 Surinam
 sùspekçiùs
 sùspekt/bd
@@ -4918,9 +4913,11 @@ sùspend/b
 sùspension
 sut
 sutàbol
-Šùtdawn
+šùt/b
+šùtdawn/b
 Sutek
 sūtra/a
+šùtùp/b
 Suwon
 süzài 
 Svedlènd/oY
@@ -5323,7 +5320,7 @@ välī/a
 välid
 välideit/dbf
 välley/a
-välyuais/hbd
+välyuais/bdh
 välyu/da
 vän/a
 vänilla
@@ -5358,10 +5355,6 @@ villeij/ia
 visited
 visit/i
 Vista
-vöčuol
-vöčuolais/hdb
-VöčuolBoks
-Vöčuol-Rialiti
 Vogel
 vokäb
 volkano/a
@@ -5372,7 +5365,9 @@ vörbos
 vörb/r
 vörçion/Ma
 vörcuol
-vörcuolais/dbh
+vörcuolais/bdh
+VörcuolBoks
+Vörcuol-Rialiti
 vörtikol/j
 vös/a2
 voten/X

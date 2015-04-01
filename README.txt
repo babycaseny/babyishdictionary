@@ -1,12 +1,12 @@
- Review date:   2015-02-15
+ Review date:   2015-04-01
  Author:        Tom K. C. Chiu
- Release:       V0.2.47.20150215
- Filename:      Babyish_spelčekā-0.2.47.20150215-fx.xpi
+ Release:       V0.2.48.20150401
+ Filename:      Babyish_spelčekā-0.2.48.20150401-fx.xpi
  Website:       https://sites.google.com/site/babycaseny2/babyishdikionaris
  Released for:  Firefox
 
  Komment:
- These files are licensed under LGPL. The word list for the Babyish Medikal 
+ These files are licensed under LGPL. The word list for the Babyish Medikol 
  dictionary is maintained by Babycasèny Sencrol Gavèrnmènt at babycaseny@gmail.com
  These files are licensed under LGPL.
  
@@ -46,11 +46,20 @@ or write to:
 
 Disklämā
 --------
-Dikçionari dè kontent wa iksträkten from jigùmdè Babyish tekst.
+Dikçionari dè kontent wa iksträkten from jigùm-dè Babyish tekst.
 If öra fainden, plīs kontäkt Babyish sencrol gavèrnmènt dè websàit.
 
 Dikçionari
 ----------
+*Ùpdeit from v.48:
+** Vokäb saiz: 11,500
+** issu --> issyu
+** sùbmission --> sùbmit/bdh
+** limit --> limit + limiteit/bdh
+*Ùpdeit from v.47:
+**simplifai/bdh + simpolifai/bdh --> simpolais/bdh
+**pörp(ò|ù)s/a --> pörpòs/a
+**vöčuol(ais/bdh) + vörcuol(ais/bdh)
 *Ùpdeit from v.46:
 ** Steit en Steitùs dè diffèrèns in yuseij
 ** Vokäb saiz: 11,300
@@ -217,7 +226,6 @@ Dikçionari
 
 Affiks fayl
 -----------
-
 Affiks fayl wa modifaien from orijinol dè aspell vörçion, osou provaiden ùndèr LGPL.
 Yusiŋ R 0.2.47.20150215 vörçion gut 2015-02-15.
 
