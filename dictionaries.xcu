@@ -2,12 +2,23 @@
 <oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Linguistic" oor:package="org.openoffice.Office">
  <node oor:name="ServiceManager">
     <node oor:name="Dictionaries">
-        <node oor:name="HunSpellDic_catalan_general" oor:op="fuse">
+        <node oor:name="HunSpellDic_bb-BK" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
                 <value>%origin%/dictionaries/bb-BK.aff %origin%/dictionaries/bb-BK.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
+            </prop>
+            <prop oor:name="Locales" oor:type="oor:string-list">
+                <value>bb-BK</value>
+            </prop>
+        </node>
+        <node oor:name="HyphDic_bb-BK" oor:op="fuse">
+            <prop oor:name="Locations" oor:type="oor:string-list">
+                <value>%origin%/dictionaries/hyph_bb-BK.dic</value>
+            </prop>
+            <prop oor:name="Format" oor:type="xs:string">
+                <value>DICT_HYPH</value>
             </prop>
             <prop oor:name="Locales" oor:type="oor:string-list">
                 <value>bb-BK</value>
