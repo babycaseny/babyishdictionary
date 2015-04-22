@@ -3,7 +3,7 @@
 # Built from scratch. Released under the GNU General Public License
 # Please see README.txt and license.txt for further information.
 #
-# R 0.2.48.20150315, 2015-03-15
+# R 0.2.49.20150501, 2015-05-01
 # R36:
 # 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
@@ -27,6 +27,9 @@
 # 1. Ädd REP er/èr/ā
 # R48:
 # 1. Ädd REP ción --> çion
+# R49:
+# 1. Ädd -lènd + -ik --> -ik
+# 2. Ädd -ais + -çion --> -eiçion
 #
 SET UTF-8
 
@@ -339,7 +342,9 @@ SFX b -ùp iŋ-ùp -ùp
 SFX c Y 1
 SFX c 0 zo .
 
-SFX d Y 12
+SFX d Y 14
+SFX d ais eiçion ais
+SFX d ais eiçions ais
 SFX d 0 eiçion [^bdpst]
 SFX d 0 eiçions [^bdpst]
 SFX d 0 içion dd
@@ -412,11 +417,12 @@ SFX m 0 fol .
 SFX n Y 1
 SFX n 0 bu .
 
-SFX o Y 4
+SFX o Y 5
 SFX o 0 k [iīíǐì]
 SFX o 0 ik [^iīíǐì]
 SFX o èn enik èn
 SFX o àn änik àn
+SFX o lènd ik lènd
 
 SFX p Y 6
 SFX p 0 loji .
@@ -634,4 +640,3 @@ REP y ŋ
 REP zh ẑ
 REP zh ž
 REP zr ẑ
-
