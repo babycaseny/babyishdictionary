@@ -327,7 +327,7 @@ akkyusiŋ
 àkompàni
 àkompànied
 àkompànien
-àkompàniŋ
+àkompàniiŋ
 àkompaund
 àkompaunded
 àkompaunden
@@ -805,7 +805,10 @@ aveilàboliti
 ävèreijiŋ
 .avi
 ävj.
-avoid/b
+avoid
+avoided
+avoiden
+avoidiŋ
 awàk
 awàken
 awàkenna
@@ -1205,6 +1208,7 @@ brēd
 brein
 breins
 bridj
+bridjs
 brif
 brifkeis
 brifkeises
@@ -1977,12 +1981,10 @@ displeien
 displeiiŋ
 displeis
 displeismènt
-displeismènt/a
 displeismènts
 dispüt
 dispüts
 dispyut
-dispyut/a
 dispyuts
 dissiplin
 dissiplins
@@ -2240,7 +2242,8 @@ editiŋ
 edits
 Edubuntu
 Efes
-eiĥtpīpol/a
+eiĥtpīpol
+eiĥtpīpols
 eijènçi
 eijènçis
 eijènt
@@ -3498,16 +3501,14 @@ harm
 harmed
 harmen
 harmiŋ
-harmonaiçion
-harmonaiçionol
-harmonaiçionolli
-harmonaiçions
 harmonais
 harmonaised
 harmonaiseiçion
+harmonaiseiçions
 harmonaisen
 harmonaisiŋ
 harmoni
+harmonik
 hārt
 hārts
 Harumi
@@ -3928,6 +3929,8 @@ ikspörtaiçion
 ikspörtaiçions
 ikspörtais
 ikspörtaised
+ikspörtaiseiçion
+ikspörtaiseiçions
 ikspörtaisen
 ikspörtaisiŋ
 iksporteiçion
@@ -3975,6 +3978,8 @@ ikstörnolaiçion
 ikstörnolaiçions
 ikstörnolais
 ikstörnolaised
+ikstörnolaiseiçion
+ikstörnolaiseiçions
 ikstörnolaisen
 ikstörnolaisiŋ
 ikstörnolli
@@ -4070,6 +4075,7 @@ imeijiŋ
 imeijs
 img
 imiteiçion
+imiteiçions
 imiteit
 imiteited
 imiteiten
@@ -4094,6 +4100,8 @@ impenden
 impendiŋ
 implai
 implaied
+implaieiçion
+implaieiçions
 implaien
 implaiiŋ
 implaikeiçion
@@ -4485,6 +4493,7 @@ invoked
 invokeiçion
 invokeiçions
 invoken
+invokiŋ
 involv
 involved
 involveiçion
@@ -7392,8 +7401,6 @@ oystèr
 oystèrs
 O’ẑoun
 P
-pätč
-pätčes
 päd
 pädiŋ
 pädiŋs
@@ -7504,6 +7511,8 @@ paswörd
 paswörds
 paŧ
 PATA
+pätč
+pätčes
 paŧes
 patio
 paŧs
@@ -8029,8 +8038,13 @@ pripenden
 pripendiŋ
 prirīkwair
 prirīkwaired
+prirīkwaireiçion
+prirīkwaireiçionol
+prirīkwaireiçionolli
+prirīkwaireiçions
 prirīkwairen
-prirīkwairmènt/a
+prirīkwairiŋ
+prirīkwairmènt
 prirīkwairmènts
 pririkwesçion
 pririkwesçionol
@@ -8458,7 +8472,10 @@ rībiulden
 rībiuldiŋ
 rībūten
 rič
-rīč/b
+rīč
+rīčed
+rīčen
+rīčiŋ
 rīd
 rīdà
 rīdā
@@ -10172,7 +10189,6 @@ syllàbùs
 Symantec
 Symäntek
 symbòl
-symbòl/a
 symbòlik
 symbòls
 symptòm
@@ -10912,7 +10928,6 @@ välideiten
 välideitiŋ
 välideitiŋli
 välideitiŋs
-välīs
 välley
 välleys
 välyu
@@ -10922,6 +10937,8 @@ välyuaiçionolli
 välyuaiçions
 välyuais
 välyuaised
+välyuaiseiçion
+välyuaiseiçions
 välyuaisen
 välyuaisiŋ
 välyueiçion
