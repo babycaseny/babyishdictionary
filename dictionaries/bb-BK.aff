@@ -5,12 +5,12 @@
 #
 # R 0.2.49.20150501, 2015-05-01
 # R36:
-# 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
+# 1. Fiksen sùffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
 # 3. Ädd -ed / -en konvörçion
 # R37:
-# 1. Duplikeiten koud ripleisen
-# 2. Ädd kondiçion when wörd ended with "-ùp" & "-on"
+# 1. Dùplikeiten koud rīpleisen
+# 2. Ädd kondiçion when wörd ended wiŧ "-ùp" & "-on"
 # R39:
 # 1. Ädd -èn / -àn + -ik --> -enik / -änik
 # 2.
@@ -28,7 +28,7 @@
 # R48:
 # 1. Ädd REP ción --> çion
 # R49:
-# 1. Ädd -lènd + -ik --> -ik
+# 1. Modifai -lènd + -ik/-iš dè biheivior
 # 2. Ädd -ais + -çion --> -eiçion
 #
 SET UTF-8
@@ -642,3 +642,4 @@ REP y ŋ
 REP zh ẑ
 REP zh ž
 REP zr ẑ
+

@@ -257,8 +257,8 @@ Aiša
 Aišas
 aisen
 aisi
-Aislènd
-Aislèndiš
+Aisllènd
+Aisllèndiš
 aisoleiçion
 aisoleiçions
 aisoleit
@@ -327,7 +327,7 @@ akkyusiŋ
 àkompàni
 àkompànied
 àkompànien
-àkompàniiŋ
+àkompàniŋ
 àkompaund
 àkompaunded
 àkompaunden
@@ -805,10 +805,7 @@ aveilàboliti
 ävèreijiŋ
 .avi
 ävj.
-avoid
-avoided
-avoiden
-avoidiŋ
+avoid/b
 awàk
 awàken
 awàkenna
@@ -1208,7 +1205,6 @@ brēd
 brein
 breins
 bridj
-bridjs
 brif
 brifkeis
 brifkeises
@@ -1230,6 +1226,9 @@ briŋed
 briŋen
 briŋiŋ
 Britian
+Britik
+Britiš
+Britlènd
 brīž
 bro
 brōd
@@ -1243,6 +1242,7 @@ brōdkastiŋ
 bronz
 bros
 Brunei
+Bruneik
 bu
 Buda
 Budapest
@@ -1279,6 +1279,10 @@ bullèt
 bullètpoint
 bullètpoints
 Bundaŋ
+bùndol
+bùndoled
+bùndolen
+bùndoliŋ
 bundou
 búnjün
 bürö
@@ -1981,10 +1985,12 @@ displeien
 displeiiŋ
 displeis
 displeismènt
+displeismènt/a
 displeismènts
 dispüt
 dispüts
 dispyut
+dispyut/a
 dispyuts
 dissiplin
 dissiplins
@@ -2242,8 +2248,7 @@ editiŋ
 edits
 Edubuntu
 Efes
-eiĥtpīpol
-eiĥtpīpols
+eiĥtpīpol/a
 eijènçi
 eijènçis
 eijènt
@@ -2774,8 +2779,8 @@ finiš
 finišed
 finišen
 finišiŋ
-Finlènd
-Finlèndiš
+Finliš
+Finllènd
 FIPS
 Firefox
 fisikol
@@ -3501,14 +3506,16 @@ harm
 harmed
 harmen
 harmiŋ
+harmonaiçion
+harmonaiçionol
+harmonaiçionolli
+harmonaiçions
 harmonais
 harmonaised
 harmonaiseiçion
-harmonaiseiçions
 harmonaisen
 harmonaisiŋ
 harmoni
-harmonik
 hārt
 hārts
 Harumi
@@ -3929,8 +3936,6 @@ ikspörtaiçion
 ikspörtaiçions
 ikspörtais
 ikspörtaised
-ikspörtaiseiçion
-ikspörtaiseiçions
 ikspörtaisen
 ikspörtaisiŋ
 iksporteiçion
@@ -3978,8 +3983,6 @@ ikstörnolaiçion
 ikstörnolaiçions
 ikstörnolais
 ikstörnolaised
-ikstörnolaiseiçion
-ikstörnolaiseiçions
 ikstörnolaisen
 ikstörnolaisiŋ
 ikstörnolli
@@ -4075,7 +4078,6 @@ imeijiŋ
 imeijs
 img
 imiteiçion
-imiteiçions
 imiteit
 imiteited
 imiteiten
@@ -4100,8 +4102,6 @@ impenden
 impendiŋ
 implai
 implaied
-implaieiçion
-implaieiçions
 implaien
 implaiiŋ
 implaikeiçion
@@ -4222,8 +4222,8 @@ infra
 infrastrùkcör
 iŋ
 -iŋ
-Iŋglènd
 Iŋgliš
+Iŋgllènd
 ingrèdiènt
 ingrèdiènts
 inherit
@@ -4326,6 +4326,7 @@ instityuten
 instityutiŋ
 instol
 instolā
+instolàbol
 instolās
 instoled
 instoleiçion
@@ -4493,7 +4494,6 @@ invoked
 invokeiçion
 invokeiçions
 invoken
-invokiŋ
 involv
 involved
 involveiçion
@@ -4763,6 +4763,8 @@ kalkyuleited
 kalkyuleiten
 kalkyuleitiŋ
 Kambodia
+Kambodiaik
+Kambodiaiš
 Kämbrij
 kamera
 kameras
@@ -6771,9 +6773,9 @@ nävigeit
 nävigeited
 nävigeiten
 nävigeitiŋ
+Nederik
+Nederiš
 Nederlènd
-Nederlèndik
-Nederlèndiš
 negat
 negativ
 negativiti
@@ -6800,6 +6802,7 @@ neimspeis
 neina
 nèist
 neitiv
+neitivli
 NeoMaits
 Neopets
 Neopia
@@ -6928,8 +6931,8 @@ noises
 Nokia
 non
 Nonhyòn
-Norlènd
-Norlèndiš
+Norliš
+Norllènd
 normol
 normolli
 nörs
@@ -7525,6 +7528,10 @@ pàused
 pàusen
 pàusiŋ
 pawā
+pawāšift
+pawāùp
+pawāwindow
+pawāwindows
 pawdā
 pàwdèr
 pàwdèriŋ
@@ -7730,11 +7737,10 @@ poket
 pokets
 Pokfīld
 Pol
-Polènd
-Polèndiš
 poliçi
 poliçis
 polis
+Poliš
 polisoffisā
 polisoffisās
 polissteiçion
@@ -7746,6 +7752,7 @@ politikosencrolisùmā
 politikosencrolisùmās
 politikosencrolisùmik
 politiks
+Pollènd
 polluçion
 polluçions
 pollut
@@ -8038,13 +8045,9 @@ pripenden
 pripendiŋ
 prirīkwair
 prirīkwaired
-prirīkwaireiçion
-prirīkwaireiçionol
-prirīkwaireiçionolli
-prirīkwaireiçions
 prirīkwairen
-prirīkwairiŋ
 prirīkwairmènt
+prirīkwairmènt/a
 prirīkwairmènts
 pririkwesçion
 pririkwesçionol
@@ -8100,6 +8103,7 @@ probàbolistik
 probàboliti
 probàbolli
 problèm
+problèmeitik
 problèms
 prodùkçion
 prodùkçions
@@ -8472,10 +8476,7 @@ rībiulden
 rībiuldiŋ
 rībūten
 rič
-rīč
-rīčed
-rīčen
-rīčiŋ
+rīč/b
 rīd
 rīdà
 rīdā
@@ -8620,6 +8621,12 @@ rīkòvèr
 rīkòvèred
 rīkòvèren
 rīkòvèriŋ
+rīkrieiçion
+rīkrieiçions
+rīkrieit
+rīkrieited
+rīkrieiten
+rīkrieitiŋ
 riktrutiŋ
 rīkwair
 rīkwaired
@@ -8811,6 +8818,8 @@ risònàbol
 risòns
 rīsōrs
 rīsōrses
+rīsōrsfayl
+rīsōrsfayls
 rīsörv
 rīsörved
 rīsörveiçion
@@ -9480,6 +9489,7 @@ skopik
 skor
 sköt
 Skotik
+Skotiš
 Skotlènd
 sköts
 Skräbbol
@@ -10155,12 +10165,9 @@ sūtras
 šùtùpiŋ
 Suwon
 süzài 
+Svedik
+Svediš
 Svedlènd
-Svedlèndik
-Svedlèndiš
-Svelènd
-Svelèndik
-Svelèndiš
 SVG
 swič
 swičed
@@ -10189,6 +10196,7 @@ syllàbùs
 Symantec
 Symäntek
 symbòl
+symbòl/a
 symbòlik
 symbòls
 symptòm
@@ -10928,6 +10936,7 @@ välideiten
 välideitiŋ
 välideitiŋli
 välideitiŋs
+välīs
 välley
 välleys
 välyu
@@ -10937,8 +10946,6 @@ välyuaiçionolli
 välyuaiçions
 välyuais
 välyuaised
-välyuaiseiçion
-välyuaiseiçions
 välyuaisen
 välyuaisiŋ
 välyueiçion
@@ -11575,3 +11582,4 @@ zúŋrǔi
 zúŋzùk
 zünsek
 ẑǔyào
+
