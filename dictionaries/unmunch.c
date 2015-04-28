@@ -6,7 +6,6 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -18,6 +17,7 @@
 #endif
 
 #include "unmunch.h"
+
 
 int main(int argc, char** argv)
 {
@@ -112,7 +112,7 @@ int main(int argc, char** argv)
     numwords++;
     
     if (al)
-       expand_rootword(ts,wl,ap,al);
+       expand_rootword(ts,wl,ap);
   
     for (i=0; i < numwords; i++) {
       fprintf(stdout,"%s\n",wlist[i].word);
@@ -160,19 +160,10 @@ int parse_aff_file(FILE * afflst)
                     case 1: { achar = *piece; break; }
                     case 2: { if (*piece == 'Y') ff = XPRODUCT; break; }
                     case 3: { numents = atoi(piece); 
-                              if ((numents < 0) ||
-                                  ((SIZE_MAX/sizeof(struct affent)) < numents))
-                              {
-                                 fprintf(stderr,
-                                     "Error: too many entries: %d\n", numents);
-                                 numents = 0;
-                              } else {
-                                 ptr = malloc(numents * sizeof(struct affent));
-                                 ptr->achar = achar;
-                                 ptr->xpflg = ff;
-                                 fprintf(stderr,"parsing %c entries %d\n",
-                                         achar,numents);
-                              }
+                              ptr = malloc(numents * sizeof(struct affent));
+                              ptr->achar = achar;
+                              ptr->xpflg = ff;
+	                      fprintf(stderr,"parsing %c entries %d\n",achar,numents);
                               break;
                             }
 		    default: break;
@@ -214,15 +205,6 @@ int parse_aff_file(FILE * afflst)
                                    nptr->appnd=mystrdup("");
 				   nptr->appndl = 0;
                                  }   
-                                 if (strchr(nptr->appnd, '/')) {
-                                    char * addseparator = (char *) realloc(nptr->appnd, nptr->appndl + 2);
-                                    if (addseparator) {
-                                      nptr->appndl++;
-                                      addseparator[nptr->appndl-1] = '|';
-                                      addseparator[nptr->appndl] = '\0';
-                                      nptr->appnd = addseparator;
-                                    }
-                                 }
                                  break; 
                                }
                        case 4: { encodeit(nptr,piece);}
@@ -236,20 +218,18 @@ int parse_aff_file(FILE * afflst)
              }
              nptr++;
           }
-          if (ptr) {
-             if (ft == 'P') {
-                ptable[numpfx].aep = ptr;
-                ptable[numpfx].num = numents;
-                fprintf(stderr,"ptable %d num is %d flag %c\n",numpfx,ptable[numpfx].num,ptr->achar);
-                numpfx++;
-             } else if (ft == 'S') {
-                stable[numsfx].aep = ptr;
-                stable[numsfx].num = numents;
-                fprintf(stderr,"stable %d num is %d flag %c\n",numsfx,stable[numsfx].num,ptr->achar);
-                numsfx++;
-             }
-             ptr = NULL;
+          if (ft == 'P') {
+             ptable[numpfx].aep = ptr;
+             ptable[numpfx].num = numents;
+             fprintf(stderr,"ptable %d num is %d flag %c\n",numpfx,ptable[numpfx].num,ptr->achar);
+             numpfx++;
+          } else {
+             stable[numsfx].aep = ptr;
+             stable[numsfx].num = numents;
+             fprintf(stderr,"stable %d num is %d flag %c\n",numsfx,stable[numsfx].num,ptr->achar);
+             numsfx++;
           }
+          ptr = NULL;
           nptr = NULL;
           numents = 0;
           achar='\0';
@@ -352,7 +332,7 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
 {
     struct affent *     aent;
     int			cond;
-    int			tlen;
+    int	tlen;
     unsigned char *	cp;		
     int			i;
     char *              pp;
@@ -372,6 +352,7 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
 	          break;
             }
             if (cond >= aent->numconds) {
+
 	      /* we have a match so add prefix */
               tlen = 0;
               if (aent->appndl) {
@@ -442,7 +423,7 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
 
 
 
-int expand_rootword(const char * ts, int wl, const char * ap, int al)
+int expand_rootword(const char * ts, int wl, const char * ap)
 {
     int i;
     int j;
