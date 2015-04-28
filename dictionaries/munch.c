@@ -4,15 +4,17 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#ifdef __linux__
+#include <limits.h>
+#if defined(__linux__) && !defined(__ANDROID__)
 #include <error.h>
 #include <errno.h>
-#endif
 #include <sys/mman.h>
+#endif
 
 #include "munch.h"
 
@@ -34,6 +36,8 @@ int main(int argc, char** argv)
   struct hentry * ep1;
   struct affent * pfxp;
   struct affent * sfxp;
+
+  (void)argc;
 
   /* first parse the command line options */
   /* arg1 - wordlist, arg2 - affix file */
@@ -66,7 +70,10 @@ int main(int argc, char** argv)
   numpfx = 0;
   numsfx = 0;
 
-  parse_aff_file(afflst);
+  if (parse_aff_file(afflst)) {
+    fprintf(stderr,"Error - in affix file loading\n");
+    exit(1);
+  }
   fclose(afflst);
 
   fprintf(stderr,"parsed in %d prefixes and %d suffixes\n",numpfx,numsfx);
@@ -201,7 +208,7 @@ int main(int argc, char** argv)
 }
 
 
-void parse_aff_file(FILE * afflst)
+int parse_aff_file(FILE * afflst)
 {  
     int i, j;
     int numents = 0;
@@ -230,10 +237,19 @@ void parse_aff_file(FILE * afflst)
                     case 1: { achar = *piece; break; }
                     case 2: { if (*piece == 'Y') ff = XPRODUCT; break; }
                     case 3: { numents = atoi(piece); 
-                              ptr = malloc(numents * sizeof(struct affent));
-                              ptr->achar = achar;
-                              ptr->xpflg = ff;
-	                      fprintf(stderr,"parsing %c entries %d\n",achar,numents);
+                              if ((numents < 0) ||
+                                  ((SIZE_MAX/sizeof(struct affent)) < numents))
+                              {
+                                 fprintf(stderr,
+                                     "Error: too many entries: %d\n", numents);
+                                 numents = 0;
+                              } else {
+                                 ptr = malloc(numents * sizeof(struct affent));
+                                 ptr->achar = achar;
+                                 ptr->xpflg = ff;
+                                 fprintf(stderr,"parsing %c entries %d\n",
+                                         achar,numents);
+                              }
                               break;
                             }
 		    default: break;
@@ -245,7 +261,7 @@ void parse_aff_file(FILE * afflst)
           /* now parse all of the sub entries*/
           nptr = ptr;
           for (j=0; j < numents; j++) {
-             fgets(line,MAX_LN_LEN,afflst);
+             if (!fgets(line,MAX_LN_LEN,afflst)) return 1;
              mychomp(line);
              tp = line;
              i = 0;
@@ -306,6 +322,7 @@ void parse_aff_file(FILE * afflst)
        }
     }
     free(line);
+    return 0;
 }
 
 
@@ -401,7 +418,7 @@ void pfx_chk (const char * word, int len, struct affent* ep, int num)
 {
     struct affent *     aent;
     int			cond;
-    int	tlen;
+    int			tlen;
     struct hentry *	hent;
     unsigned char *	cp;		
     int			i;
@@ -574,12 +591,18 @@ int load_tables(FILE * wdlst)
 {
   char * ap;
   char ts[MAX_LN_LEN];
+  int nExtra = 5;
 
   /* first read the first line of file to get hash table size */
   if (! fgets(ts, MAX_LN_LEN-1,wdlst)) return 2;
   mychomp(ts);
   tablesize = atoi(ts);
-  tablesize = tablesize + 5;
+
+  if (tablesize <= 0 || (tablesize >= (INT_MAX - 1 - nExtra) / (int)sizeof(struct hentry *))) {
+      return 3;
+  }
+
+  tablesize += nExtra;
   if ((tablesize %2) == 0) tablesize++;
 
   /* allocate the hash table */
@@ -647,7 +670,7 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
 {
     struct affent *     aent;
     int			cond;
-    int	tlen;
+    int			tlen;
     unsigned char *	cp;		
     int			i;
     char *              pp;
@@ -790,18 +813,20 @@ char * mystrsep(char ** stringp, const char delim)
       *stringp = dp+1;
       nc = (int)((unsigned long)dp - (unsigned long)mp);
       rv = (char *) malloc(nc+1);
-      memcpy(rv,mp,nc);
-      *(rv+nc) = '\0';
-      return rv;
+      if (rv) {
+        memcpy(rv,mp,nc);
+        *(rv+nc) = '\0';
+      }
     } else {
       rv = (char *) malloc(n+1);
-      memcpy(rv, mp, n);
-      *(rv+n) = '\0';
-      *stringp = mp + n;
-      return rv;
+      if (rv) {
+        memcpy(rv, mp, n);
+        *(rv+n) = '\0';
+        *stringp = mp + n;
+      }
     }
   }
-  return NULL;
+  return rv;
 }
 
 

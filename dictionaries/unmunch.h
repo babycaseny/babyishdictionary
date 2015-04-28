@@ -4,7 +4,7 @@
 #define MAX_WD_LEN    200
 #define MAX_PREFIXES  256
 #define MAX_SUFFIXES  256
-#define MAX_WORDS     5000
+#define MAX_WORDS     500000
  
 #define ROTATE_LEN      5
  
@@ -46,6 +46,8 @@ struct affixptr          ptable[MAX_PREFIXES];
 /* the suffix table */
 struct affixptr          stable[MAX_SUFFIXES];
 
+int    fullstrip;
+
 
 int    numwords;	          /* number of words found */
 struct dwords
@@ -59,7 +61,7 @@ struct dwords  wlist[MAX_WORDS]; /* list words found */
 
 /* the routines */
 
-void parse_aff_file(FILE* afflst);
+int parse_aff_file(FILE* afflst);
 
 void encodeit(struct affent * ptr, char * cs);
 

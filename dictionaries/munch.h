@@ -87,7 +87,7 @@ struct dwords  wlist[MAX_WORDS]; /* list words found */
 
 /* the routines */
 
-void parse_aff_file(FILE* afflst);
+int parse_aff_file(FILE* afflst);
 
 void encodeit(struct affent * ptr, char * cs);
 
