@@ -498,6 +498,7 @@ SFX y 0 i [^iīíǐì]
 SFX z Y 2
 SFX z 0 ö [^t]
 SFX z t čö t
+
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
 REP 141
