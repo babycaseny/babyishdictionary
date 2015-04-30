@@ -10,11 +10,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#ifdef __linux__
+#if defined(__linux__) && !defined(__ANDROID__)
 #include <error.h>
 #include <errno.h>
-#endif
 #include <sys/mman.h>
+#endif
 
 #include "unmunch.h"
 
@@ -31,6 +31,8 @@ int main(int argc, char** argv)
   char *wf, *af;
   char * ap;
   char ts[MAX_LN_LEN];
+
+  (void)argc;
 
   /* first parse the command line options */
   /* arg1 - munched wordlist, arg2 - affix file */
@@ -62,8 +64,13 @@ int main(int argc, char** argv)
 
   numpfx = 0;
   numsfx = 0;
+  fullstrip = 0;
 
-  parse_aff_file(afflst);
+  if (parse_aff_file(afflst)) {
+    fprintf(stderr,"Error - in affix file loading\n");
+    exit(1);
+  }
+
   fclose(afflst);
 
   fprintf(stderr,"parsed in %d prefixes and %d suffixes\n",numpfx,numsfx);
@@ -78,7 +85,10 @@ int main(int argc, char** argv)
   }
 
   /* skip over the hash table size */
-  if (! fgets(ts, MAX_LN_LEN-1,wrdlst)) return 2;
+  if (! fgets(ts, MAX_LN_LEN-1,wrdlst)) {
+    fclose(wrdlst);
+    return 2;
+  }
   mychomp(ts);
 
   while (fgets(ts,MAX_LN_LEN-1,wrdlst)) {
@@ -102,7 +112,7 @@ int main(int argc, char** argv)
     numwords++;
     
     if (al)
-       expand_rootword(ts,wl,ap,al);
+       expand_rootword(ts,wl,ap);
   
     for (i=0; i < numwords; i++) {
       fprintf(stdout,"%s\n",wlist[i].word);
@@ -120,7 +130,7 @@ int main(int argc, char** argv)
 
 
 
-void parse_aff_file(FILE * afflst)
+int parse_aff_file(FILE * afflst)
 {  
     int i, j;
     int numents=0;
@@ -135,6 +145,7 @@ void parse_aff_file(FILE * afflst)
        mychomp(line);
        ft = ' ';
        fprintf(stderr,"parsing line: %s\n",line);
+       if (strncmp(line,"FULLSTRIP",9) == 0) fullstrip = 1;
        if (strncmp(line,"PFX",3) == 0) ft = 'P';
        if (strncmp(line,"SFX",3) == 0) ft = 'S';
        if (ft != ' ') {
@@ -164,7 +175,7 @@ void parse_aff_file(FILE * afflst)
           /* now parse all of the sub entries*/
           nptr = ptr;
           for (j=0; j < numents; j++) {
-             fgets(line,MAX_LN_LEN,afflst);
+             if (!fgets(line,MAX_LN_LEN,afflst)) return 1;
              mychomp(line);
              tp = line;
              i = 0;
@@ -225,6 +236,7 @@ void parse_aff_file(FILE * afflst)
        }
     }
     free(line);
+    return 0;
 }
 
 
@@ -329,8 +341,10 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
     
     for (aent = ep, i = num; i > 0; aent++, i--) {
 
-        /* now make sure all conditions match */
-        if ((len > aent->stripl) && (len >= aent->numconds)) {
+        /* now make sure all conditions match */        
+        if ((len + fullstrip > aent->stripl) && (len >= aent->numconds) &&
+            ((aent->stripl == 0) ||
+            (strncmp(aent->strip, word, aent->stripl) == 0))) {
 
             cp = (unsigned char *) word;
             for (cond = 0;  cond < aent->numconds;  cond++) {
@@ -377,7 +391,9 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
        * then strip off strip string and add suffix
        */
 
-      if ((len > aent->stripl) && (len >= aent->numconds)) {
+      if ((len + fullstrip > aent->stripl) && (len >= aent->numconds) &&
+            ((aent->stripl == 0) ||
+            (strcmp(aent->strip, word + len - aent->stripl) == 0))) {
 	cp = (unsigned char *) (word + len);
 	for (cond = aent->numconds;  --cond >= 0;  ) {
 	    if ((aent->conds[*--cp] & (1 << cond)) == 0) break;
@@ -407,7 +423,7 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
 
 
 
-int expand_rootword(const char * ts, int wl, const char * ap, int al)
+int expand_rootword(const char * ts, int wl, const char * ap)
 {
     int i;
     int j;
@@ -462,18 +478,20 @@ char * mystrsep(char ** stringp, const char delim)
       *stringp = dp+1;
       nc = (int)((unsigned long)dp - (unsigned long)mp);
       rv = (char *) malloc(nc+1);
-      memcpy(rv,mp,nc);
-      *(rv+nc) = '\0';
-      return rv;
+      if (rv) {
+        memcpy(rv,mp,nc);
+        *(rv+nc) = '\0';
+      }
     } else {
       rv = (char *) malloc(n+1);
-      memcpy(rv, mp, n);
-      *(rv+n) = '\0';
-      *stringp = mp + n;
-      return rv;
+      if (rv) {
+        memcpy(rv, mp, n);
+        *(rv+n) = '\0';
+        *stringp = mp + n;
+      }
     }
   }
-  return NULL;
+  return rv;
 }
 
 
@@ -481,9 +499,9 @@ char * mystrdup(const char * s)
 {
   char * d = NULL;
   if (s) {
-    int sl = strlen(s);
-    d = (char *) malloc(((sl+1) * sizeof(char)));
-    if (d) memcpy(d,s,((sl+1)*sizeof(char)));
+    int sl = strlen(s)+1;
+    d = (char *) malloc(sl);
+    if (d) memcpy(d,s,sl);
   }
   return d;
 }
@@ -492,7 +510,7 @@ char * mystrdup(const char * s)
 void mychomp(char * s)
 {
   int k = strlen(s);
-  if (k > 0) *(s+k-1) = '\0';
+  if ((k > 0) && (*(s+k-1) == '\n')) *(s+k-1) = '\0';
   if ((k > 1) && (*(s+k-2) == '\r')) *(s+k-2) = '\0';
 }
 

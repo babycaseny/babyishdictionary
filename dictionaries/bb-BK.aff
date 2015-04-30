@@ -3,14 +3,14 @@
 # Built from scratch. Released under the GNU General Public License
 # Please see README.txt and license.txt for further information.
 #
-# R 0.2.48.20150315, 2015-03-15
+# R 0.2.49.20150501, 2015-05-01
 # R36:
-# 1. Fiksen suffiks 'd' dè difaineiçion: -çion(s)
+# 1. Fiksen sùffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
 # 3. Ädd -ed / -en konvörçion
 # R37:
-# 1. Duplikeiten koud ripleisen
-# 2. Ädd kondiçion when wörd ended with "-ùp" & "-on"
+# 1. Dùplikeiten koud rīpleisen
+# 2. Ädd kondiçion when wörd ended wiŧ "-ùp" & "-on"
 # R39:
 # 1. Ädd -èn / -àn + -ik --> -enik / -änik
 # 2.
@@ -27,6 +27,9 @@
 # 1. Ädd REP er/èr/ā
 # R48:
 # 1. Ädd REP ción --> çion
+# R49:
+# 1. Modifai -lènd + -ik/-iš dè biheivior
+# 2. Ädd -ais + -çion --> -eiçion
 #
 SET UTF-8
 
@@ -182,32 +185,345 @@ MAP Zz
 MAP Žž
 MAP Ẑẑ
 
+# For abbreviations and words requiring a hyphen 
+# When andraord in compositions, e.g. TV (Pay-TV). 
+#PFX a Y 1 
+#PFX a 0 - / WY.
+
+PFX 3 Y 1
+PFX 3 0 kon .
+
+PFX 4 Y 1
+PFX 4 0 pro .
+
+PFX 6 Y 1
+PFX 6 0 mal .
+
+PFX A Y 1
+PFX A 0 mis .
+
+PFX B Y 1
+PFX B 0 ovèr .
+
+PFX C Y 1
+PFX C 0 undèr .
+
+PFX D Y 1
+PFX D 0 rī .
+
+PFX E Y 1
+PFX E 0 pri .
+
+PFX F Y 1
+PFX F 0 post .
+
+PFX G Y 1
+PFX G 0 híu .
+
+PFX H Y 1
+PFX H 0 inter .
+
+PFX I Y 1
+PFX I 0 intra .
+
+PFX J Y 1
+PFX J 0 ikstra .
+
+PFX K Y 2
+PFX K 0 mǐ [^i]
+PFX K 0 mǐ- i
+
+PFX L Y 1
+PFX L 0 but .
+
+PFX M Y 1
+PFX M 0 trans .
+
+PFX N Y 1
+PFX N 0 pan .
+
+PFX O Y 1
+PFX O 0 out .
+
+PFX P Y 3
+PFX P 0 supā .
+PFX P 0 hàipā .
+PFX P 0 ulutora .
+
+PFX Q Y 1
+PFX Q 0 dis .
+
+SFX R Y 2
+SFX R 0 àns [^aäā]
+SFX R 0 -àns aäā
+
+PFX S Y 1
+PFX S 0 non .
+
+PFX T Y 1
+PFX T 0 sùb .
+
+PFX U Y 1
+PFX U 0 ùn .
+
+SFX V Y 2
+SFX V 0 ga [^g]
+SFX V 0 -ga g
+
+SFX W Y 4
+SFX W 0 ùn [^aeiouäöünl]
+SFX W 0 nùn [aeiouäöü]
+SFX W 0 lùn l
+SFX W n llùn n
+
+PFX X Y 1
+PFX X 0 di .
+
+SFX Y Y 6
+SFX Y 0 š [iīíǐì]
+SFX Y 0 k [iīíǐì]
+SFX Y 0 iš [^iīíǐì]
+SFX Y 0 ik [^iīíǐì]
+SFX Y lènd iš lènd
+SFX Y lènd ik lènd
+
+SFX Z Y 4
+SFX Z y yàbol [^aeiou]y 
+SFX Z y yàboliti [^aeiou]y
+SFX Z 0 àbol
+SFX Z 0 àboliti .
+
+SFX 1 Y 18
+SFX 1 0 ikol . 
+SFX 1 er rikol er 
+SFX 1 0 ikol [^e]r 
+SFX 1 0 atikol [aeiou]m 
+SFX 1 0 ikol [^aeiou]m 
+SFX 1 0 tikol ma 
+SFX 1 a ikol [^m]a 
+SFX 1 y ikol y 
+SFX 1 0 ikol [^aemry] 
+SFX 1 0 ikolli . 
+SFX 1 er rikolli er 
+SFX 1 0 ikolli [^e]r 
+SFX 1 0 atikolli [aeiou]m 
+SFX 1 0 ikolli [^aeiou]m 
+SFX 1 0 tikolli ma 
+SFX 1 a ikolli [^m]a 
+SFX 1 y ikolli y 
+SFX 1 0 ikolli [^aemry]
+
+SFX 2 Y 1
+SFX 2 0 ùs .
+
+SFX 7 Y 4
+SFX 7 0 isùm
+SFX 7 0 isùmā
+SFX 7 0 isùmās
+SFX 7 0 isùmik
+
+SFX 8 Y 2
+SFX 8 0 -gga g
+SFX 8 0 gga [^g]
+
+SFX a Y 2
+SFX S 0 es [cçčĉqsšŝxzžẑjŧđ]
+SFX S 0 s [^cçčĉqsšŝxzžẑjŧđ]
+
+SFX b Y 9
+SFX b 0 ed .
+SFX b 0 en .
+SFX b 0 iŋ .
+SFX b -on ed-on -on
+SFX b -on en-on -on
+SFX b -on iŋ-on -on
+SFX b -ùp ed-ùp -ùp
+SFX b -ùp en-ùp -ùp
+SFX b -ùp iŋ-ùp -ùp
+
+SFX c Y 1
+SFX c 0 zo .
+
+SFX d Y 14
+SFX d 0 eiçion ais
+SFX d 0 eiçions ais
+SFX d 0 eiçion [^bdpst]
+SFX d 0 eiçions [^bdpst]
+SFX d 0 içion dd
+SFX d 0 içions dd
+SFX d d çion [^d]d
+SFX d d çions d
+SFX d d pçion [bp]
+SFX d d pçions [bp]
+SFX d s çion s
+SFX d s çions s
+SFX d t çions t
+SFX d t çion t
+
+SFX e Y 1
+SFX e 0 ru .
+
+SFX f Y 5
+SFX f 0 ed .
+SFX f 0 en .
+SFX f 0 iŋ .
+SFX f 0 iŋli .
+SFX f 0 iŋs .
+
+SFX g Y 4
+SFX g 0 ivli [st]
+SFX g 0 iv [st]
+SFX g 0 tiv [aio]
+SFX g 0 tivli [aio]
+
+SFX h Y 20
+SFX h 0 eiçion [^bdpst]
+SFX h 0 eiçionol [^bdpst]
+SFX h 0 eiçionolli [^bdpst]
+SFX h 0 eiçions [^bdpst]
+SFX h d çion d
+SFX h d çionol d
+SFX h d çionolli d
+SFX h d çions d
+SFX h d pçion [bp]
+SFX h d pçionol [bp]
+SFX h d pçionolli [bp]
+SFX h d pçions [bp]
+SFX h s çionolli s
+SFX h s çionol s
+SFX h s çion s
+SFX h s çions s
+SFX h t çionolli t
+SFX h t çionol t
+SFX h t çions t
+SFX h t çion t
+
+SFX i Y 2
+SFX i 0 ā .
+SFX i 0 ās .
+
+SFX j Y 1
+SFX j 0 li .
+
+SFX k Y 2
+SFX k 0 ènt [mn]
+SFX k 0 mènt [^mn]
+
+SFX l Y 2
+SFX l 0 er .
+SFX l 0 est .
+
+SFX m Y 1
+SFX m 0 fol .
+
+SFX n Y 1
+SFX n 0 bu .
+
+SFX o Y 5
+SFX o 0 k [iīíǐì]
+SFX o 0 ik [^iīíǐì]
+SFX o èn enik èn
+SFX o àn änik àn
+SFX o lènd ik lènd
+
+SFX p Y 6
+SFX p 0 loji .
+SFX p 0 lojiā .
+SFX p 0 lojiās .
+SFX p 0 lojik .
+SFX p 0 lojikol .
+SFX p 0 lojikolli .
+
+SFX q Y 24
+SFX q 0 tais a 
+SFX q 0 ais [^l]
+SFX q l ilais [^aeiou]l
+SFX q l ais [aeiou]l
+SFX q 0 taises a 
+SFX q 0 aises [^l] 
+SFX q l ilaises [^aeiou]l
+SFX q l aises [aeiou]l
+SFX q ùm ais ùm 
+SFX q 0 ais [^ù]m 
+SFX q s s ais 
+SFX q 0 ais [^i]s
+SFX q l ilaised [^aeiou]l
+SFX q l aised [aeiou]l
+SFX q ùm aised ùm 
+SFX q 0 aised [^ù]m 
+SFX q s sed ais 
+SFX q 0 aised [^i]s
+SFX q l ilaisiŋ [^aeiou]l 
+SFX q l aisiŋ [aeiou]l 
+SFX q ùm aisiŋ ùm 
+SFX q 0 aisiŋ [^ù]m 
+SFX q s siŋ ais 
+SFX q 0 aisiŋ [^i]s
+
+SFX r Y 3
+SFX r s ol ks
+SFX r t çol t
+SFX r 0 ol [^t]
+
+SFX s Y 1
+SFX s 0 sīk .
+
+SFX t Y 1
+SFX t 0 nai .
+
+SFX u Y 1
+SFX u 0 lès .
+
+SFX v Y 1
+SFX v 0 nès .
+
+SFX w Y 9
+SFX w 0 ikol . 
+SFX w er rikol er 
+SFX w 0 ikol [^e]r 
+SFX w 0 atikol [aeiou]m 
+SFX w 0 ikol [^aeiou]m 
+SFX w 0 tikol ma 
+SFX w a ikol [^m]a 
+SFX w y ikol y 
+SFX w 0 ikol [^aemry]
+
+SFX x Y 1
+SFX x 0 na .
+
+SFX y Y 2
+SFX y 0 -i [iīíǐì]
+SFX y 0 i [^iīíǐì]
+
+SFX z Y 2
+SFX z 0 ö [^t]
+SFX z t čö t
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
 REP 141
 REP -- -
-REP cat  keiç
-REP ing  iŋ
-REP ex   iks
-REP er   ā
-REP èr   ā
-REP er   èr
+REP cat	 keiç
+REP ing	 iŋ
+REP ex	 iks
+REP er	 ā
+REP èr	ā
+REP er	 èr
 REP ā	 èr
 REP s    ç
 REP tion çion
 REP ción çion
-REP re   rī
-REP pre  pri
-REP de   di
+REP re	 rī
+REP pre	 pri
+REP de	 di
 REP ment mènt
-REP age  eij
-REP qu   kw
-REP kv   kw
-REP uc   ùk
-REP ism  isùm
-REP c ç
+REP age	 eij
+REP qu	 kw
+REP kv	 kw
+REP uc	 ùk
+REP ism	 isùm
+REP c	 ç
+REP a	 à
 REP a á
-REP a à
 REP a ǎ
 REP a ä
 REP ā ä
@@ -327,311 +643,3 @@ REP zh ẑ
 REP zh ž
 REP zr ẑ
 
-# For abbreviations and words requiring a hyphen 
-# When andraord in compositions, e.g. TV (Pay-TV). 
-#PFX a Y 1 
-#PFX a 0 - / WY.
-
-PFX 3 Y 1
-PFX 3 0 kon .
-
-PFX 4 Y 1
-PFX 4 0 pro .
-
-PFX 6 Y 1
-PFX 6 0 mal .
-
-PFX A Y 1
-PFX A 0 mis .
-
-PFX B Y 1
-PFX B 0 ovèr .
-
-PFX C Y 1
-PFX C 0 undèr .
-
-PFX D Y 1
-PFX D 0 rī .
-
-PFX E Y 1
-PFX E 0 pri .
-
-PFX F Y 1
-PFX F 0 post .
-
-PFX G Y 1
-PFX G 0 híu .
-
-PFX H Y 1
-PFX H 0 inter .
-
-PFX I Y 1
-PFX I 0 intra .
-
-PFX J Y 1
-PFX J 0 ikstra .
-
-PFX K Y 2
-PFX K 0 mǐ [^i]
-PFX K 0 mǐ- i
-
-PFX L Y 1
-PFX L 0 but .
-
-PFX M Y 1
-PFX M 0 trans .
-
-PFX N Y 1
-PFX N 0 pan .
-
-PFX O Y 1
-PFX O 0 out .
-
-PFX P Y 3
-PFX P 0 supā .
-PFX P 0 hàipā .
-PFX P 0 ulutora .
-
-PFX Q Y 1
-PFX Q 0 dis .
-
-SFX R Y 2
-SFX R 0 àns [^aäā]
-SFX R 0 -àns aäā
-
-PFX S Y 1
-PFX S 0 non .
-
-PFX T Y 1
-PFX T 0 sùb .
-
-PFX U Y 1
-PFX U 0 ùn .
-
-SFX V Y 2
-SFX V 0 ga [^g]
-SFX V 0 -ga g
-
-SFX W Y 4
-SFX W 0 ùn [^aeiouäöünl]
-SFX W 0 nùn [aeiouäöü]
-SFX W 0 lùn l
-SFX W n llùn n
-
-PFX X Y 1
-PFX X 0 di .
-
-SFX Y Y 4
-SFX Y 0 -iš [iīíǐì]
-SFX Y 0 iš [^iīíǐì]
-SFX Y 0 -iš [iīíǐì]lènd
-SFX Y 0 iš [^iīíǐì]lènd
-
-SFX Z Y 4
-SFX Z y yàbol [^aeiou]y 
-SFX Z y yàboliti [^aeiou]y
-SFX Z 0 àbol
-SFX Z 0 àboliti .
-
-SFX 1 Y 18
-SFX 1 0 ikol . 
-SFX 1 er rikol er 
-SFX 1 0 ikol [^e]r 
-SFX 1 0 atikol [aeiou]m 
-SFX 1 0 ikol [^aeiou]m 
-SFX 1 0 tikol ma 
-SFX 1 a ikol [^m]a 
-SFX 1 y ikol y 
-SFX 1 0 ikol [^aemry] 
-SFX 1 0 ikolli . 
-SFX 1 er rikolli er 
-SFX 1 0 ikolli [^e]r 
-SFX 1 0 atikolli [aeiou]m 
-SFX 1 0 ikolli [^aeiou]m 
-SFX 1 0 tikolli ma 
-SFX 1 a ikolli [^m]a 
-SFX 1 y ikolli y 
-SFX 1 0 ikolli [^aemry]
-
-SFX 2 Y 1
-SFX 2 0 ùs .
-
-SFX 7 Y 4
-SFX 7 0 isùm
-SFX 7 0 isùmā
-SFX 7 0 isùmās
-SFX 7 0 isùmik
-
-SFX 8 Y 2
-SFX 8 0 -gga g
-SFX 8 0 gga [^g]
-
-SFX a Y 2
-SFX a 0 es [cçčĉsšŝzžẑ]
-SFX a 0 s [^cçčĉsšŝzžẑ]
-
-SFX b Y 9
-SFX b 0 ed .
-SFX b 0 en .
-SFX b 0 iŋ .
-SFX b -on ed-on -on
-SFX b -on en-on -on
-SFX b -on iŋ-on -on
-SFX b -ùp ed-ùp -ùp
-SFX b -ùp en-ùp -ùp
-SFX b -ùp iŋ-ùp -ùp
-
-SFX c Y 1
-SFX c 0 zo .
-
-SFX d Y 12
-SFX d 0 eiçion [^bdpst]
-SFX d 0 eiçions [^bdpst]
-SFX d 0 içion dd
-SFX d 0 içions dd
-SFX d d çion [^d]d
-SFX d d çions d
-SFX d d pçion [bp]
-SFX d d pçions [bp]
-SFX d s çion s
-SFX d s çions s
-SFX d t çions t
-SFX d t çion t
-
-SFX e Y 1
-SFX e 0 ru .
-
-SFX f Y 5
-SFX f 0 ed .
-SFX f 0 en .
-SFX f 0 iŋ .
-SFX f 0 iŋli .
-SFX f 0 iŋs .
-
-SFX g Y 4
-SFX g 0 ivli [st]
-SFX g 0 iv [st]
-SFX g 0 tiv [aio]
-SFX g 0 tivli [aio]
-
-SFX h Y 20
-SFX h 0 eiçion [^bdpst]
-SFX h 0 eiçionol [^bdpst]
-SFX h 0 eiçionolli [^bdpst]
-SFX h 0 eiçions [^bdpst]
-SFX h d çion d
-SFX h d çionol d
-SFX h d çionolli d
-SFX h d çions d
-SFX h d pçion [bp]
-SFX h d pçionol [bp]
-SFX h d pçionolli [bp]
-SFX h d pçions [bp]
-SFX h s çionolli s
-SFX h s çionol s
-SFX h s çion s
-SFX h s çions s
-SFX h t çionolli t
-SFX h t çionol t
-SFX h t çions t
-SFX h t çion t
-
-SFX i Y 2
-SFX i 0 ā .
-SFX i 0 ās .
-
-SFX j Y 1
-SFX j 0 li .
-
-SFX k Y 2
-SFX k 0 ènt [mn]
-SFX k 0 mènt [^mn]
-
-SFX l Y 2
-SFX l 0 er .
-SFX l 0 est .
-
-SFX m Y 1
-SFX m 0 fol .
-
-SFX n Y 1
-SFX n 0 bu .
-
-SFX o Y 4
-SFX o 0 k [iīíǐì]
-SFX o 0 ik [^iīíǐì]
-SFX o èn enik èn
-SFX o àn änik àn
-
-SFX p Y 6
-SFX p 0 loji .
-SFX p 0 lojiā .
-SFX p 0 lojiās .
-SFX p 0 lojik .
-SFX p 0 lojikol .
-SFX p 0 lojikolli .
-
-SFX q Y 24
-SFX q 0 tais a 
-SFX q 0 ais [^l]
-SFX q l ilais [^aeiou]l
-SFX q l ais [aeiou]l
-SFX q 0 taises a 
-SFX q 0 aises [^l] 
-SFX q l ilaises [^aeiou]l
-SFX q l aises [aeiou]l
-SFX q ùm ais ùm 
-SFX q 0 ais [^ù]m 
-SFX q s s ais 
-SFX q 0 ais [^i]s
-SFX q l ilaised [^aeiou]l
-SFX q l aised [aeiou]l
-SFX q ùm aised ùm 
-SFX q 0 aised [^ù]m 
-SFX q s sed ais 
-SFX q 0 aised [^i]s
-SFX q l ilaisiŋ [^aeiou]l 
-SFX q l aisiŋ [aeiou]l 
-SFX q ùm aisiŋ ùm 
-SFX q 0 aisiŋ [^ù]m 
-SFX q s siŋ ais 
-SFX q 0 aisiŋ [^i]s
-
-SFX r Y 3
-SFX r s ol ks
-SFX r t çol t
-SFX r 0 ol [^t]
-
-SFX s Y 1
-SFX s 0 sīk .
-
-SFX t Y 1
-SFX t 0 nai .
-
-SFX u Y 1
-SFX u 0 lès .
-
-SFX v Y 1
-SFX v 0 nès .
-
-SFX w Y 9
-SFX w 0 ikol . 
-SFX w er rikol er 
-SFX w 0 ikol [^e]r 
-SFX w 0 atikol [aeiou]m 
-SFX w 0 ikol [^aeiou]m 
-SFX w 0 tikol ma 
-SFX w a ikol [^m]a 
-SFX w y ikol y 
-SFX w 0 ikol [^aemry]
-
-SFX x Y 1
-SFX x 0 na .
-
-SFX y Y 2
-SFX y 0 -i [iīíǐì]
-SFX y 0 i [^iīíǐì]
-
-SFX z Y 2
-SFX z 0 ö [^t]
-SFX z t čö t

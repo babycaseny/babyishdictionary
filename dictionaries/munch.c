@@ -8,17 +8,17 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#ifdef __linux__
+#include <limits.h>
+#if defined(__linux__) && !defined(__ANDROID__)
 #include <error.h>
 #include <errno.h>
-#endif
 #include <sys/mman.h>
+#endif
 
 #include "munch.h"
 
 int main(int argc, char** argv)
 {
-
   int i, j, k, n;
   int rl, p , nwl;
   int al;
@@ -34,6 +34,8 @@ int main(int argc, char** argv)
   struct hentry * ep1;
   struct affent * pfxp;
   struct affent * sfxp;
+
+  (void)argc;
 
   /* first parse the command line options */
   /* arg1 - wordlist, arg2 - affix file */
@@ -66,7 +68,10 @@ int main(int argc, char** argv)
   numpfx = 0;
   numsfx = 0;
 
-  parse_aff_file(afflst);
+  if (parse_aff_file(afflst)) {
+    fprintf(stderr,"Error - in affix file loading\n");
+    exit(1);
+  }
   fclose(afflst);
 
   fprintf(stderr,"parsed in %d prefixes and %d suffixes\n",numpfx,numsfx);
@@ -140,7 +145,7 @@ int main(int argc, char** argv)
                numwords++;
                n = 0;
                if (al)
-		 expand_rootword(nword,nwl,as,al);
+		 expand_rootword(nword,nwl,as);
                for (k=0; k<numwords; k++) {
 		 if (lookup(wlist[k].word)) n++;
                  free(wlist[k].word);
@@ -201,7 +206,7 @@ int main(int argc, char** argv)
 }
 
 
-void parse_aff_file(FILE * afflst)
+int parse_aff_file(FILE * afflst)
 {  
     int i, j;
     int numents = 0;
@@ -245,7 +250,7 @@ void parse_aff_file(FILE * afflst)
           /* now parse all of the sub entries*/
           nptr = ptr;
           for (j=0; j < numents; j++) {
-             fgets(line,MAX_LN_LEN,afflst);
+             if (!fgets(line,MAX_LN_LEN,afflst)) return 1;
              mychomp(line);
              tp = line;
              i = 0;
@@ -306,6 +311,7 @@ void parse_aff_file(FILE * afflst)
        }
     }
     free(line);
+    return 0;
 }
 
 
@@ -574,12 +580,18 @@ int load_tables(FILE * wdlst)
 {
   char * ap;
   char ts[MAX_LN_LEN];
+  int nExtra = 5;
 
   /* first read the first line of file to get hash table size */
   if (! fgets(ts, MAX_LN_LEN-1,wdlst)) return 2;
   mychomp(ts);
   tablesize = atoi(ts);
-  tablesize = tablesize + 5;
+
+  if (tablesize <= 0 || (tablesize >= (INT_MAX - 1 - nExtra) / (int)sizeof(struct hentry *))) {
+      return 3;
+  }
+
+  tablesize += nExtra;
   if ((tablesize %2) == 0) tablesize++;
 
   /* allocate the hash table */
@@ -624,7 +636,7 @@ void add_affix_char(struct hentry * ep, char ac)
   int i;
   char * tmp;
   if (ep->affstr == NULL) {
-     ep->affstr = (char *) malloc(2*sizeof(char));
+     ep->affstr = (char *) malloc(2);
      *(ep->affstr) = ac;
      *((ep->affstr)+1) = '\0';
      return;
@@ -632,7 +644,7 @@ void add_affix_char(struct hentry * ep, char ac)
   al = strlen(ep->affstr);
   for (i=0; i< al; i++)
     if (ac == (ep->affstr)[i]) return;
-  tmp = calloc((al+2),sizeof(char));
+  tmp = calloc(al+2,1);
   memcpy(tmp,ep->affstr,(al+1));
   *(tmp+al) = ac;
   *(tmp+al+1)='\0';
@@ -669,7 +681,8 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
 	      /* we have a match so add prefix */
               tlen = 0;
               if (aent->appndl) {
-	          strcpy(tword,aent->appnd);
+	          strncpy(tword, aent->appnd, MAX_WD_LEN-1);
+	          tword[MAX_WD_LEN-1] = '\0';
                   tlen += aent->appndl;
                } 
                pp = tword + tlen;
@@ -711,7 +724,8 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
 	}
 	if (cond < 0) {
 	  /* we have a matching condition */
-          strcpy(tword,word);
+          strncpy(tword, word, MAX_WD_LEN-1);
+          tword[MAX_WD_LEN-1] = '\0';
           tlen = len;
 	  if (aent->stripl) {
              tlen -= aent->stripl;
@@ -734,7 +748,7 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
 
 
 
-int expand_rootword(const char * ts, int wl, const char * ap, int al)
+int expand_rootword(const char * ts, int wl, const char * ap)
 {
     int i;
     int j;
@@ -790,18 +804,20 @@ char * mystrsep(char ** stringp, const char delim)
       *stringp = dp+1;
       nc = (int)((unsigned long)dp - (unsigned long)mp);
       rv = (char *) malloc(nc+1);
-      memcpy(rv,mp,nc);
-      *(rv+nc) = '\0';
-      return rv;
+      if (rv) {
+        memcpy(rv,mp,nc);
+        *(rv+nc) = '\0';
+      }
     } else {
       rv = (char *) malloc(n+1);
-      memcpy(rv, mp, n);
-      *(rv+n) = '\0';
-      *stringp = mp + n;
-      return rv;
+      if (rv) {
+        memcpy(rv, mp, n);
+        *(rv+n) = '\0';
+        *stringp = mp + n;
+      }
     }
   }
-  return NULL;
+  return rv;
 }
 
 
@@ -809,9 +825,9 @@ char * mystrdup(const char * s)
 {
   char * d = NULL;
   if (s) {
-    int sl = strlen(s);
-    d = (char *) malloc(((sl+1) * sizeof(char)));
-    if (d) memcpy(d,s,((sl+1)*sizeof(char)));
+    int sl = strlen(s)+1;
+    d = (char *) malloc(sl);
+    if (d) memcpy(d,s,sl);
   }
   return d;
 }
