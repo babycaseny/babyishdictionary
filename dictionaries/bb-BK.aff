@@ -2,6 +2,9 @@
 # Copyright (c) 2007-2015, Tom K. C. Chiu
 # Built from scratch. Released under the GNU General Public License
 # Please see README.txt and license.txt for further information.
+# Online sources: 
+# http://github.com/babycaseny/babyishdictionary/blob/master/dictionaries/bb-BK.aff
+# http://babyish.wikia.com/wiki/Babyish_spel%C4%8Dek%C4%81/bb.aff
 #
 # R 0.2.49.20150501, 2015-05-01
 # R36:
@@ -279,13 +282,15 @@ SFX W n llùn n
 PFX X Y 1
 PFX X 0 di .
 
-SFX Y Y 6
-SFX Y 0 š [iīíǐì]
-SFX Y 0 k [iīíǐì]
+SFX Y Y 8
+SFX Y 0 -iš [iīíǐì]
 SFX Y 0 iš [^iīíǐì]
+SFX Y 0 -iš [iīíǐì]lènd
+SFX Y 0 iš [^iīíǐì]lènd
+SFX Y 0 -ik [iīíǐì]
 SFX Y 0 ik [^iīíǐì]
-SFX Y lènd iš lènd
-SFX Y lènd ik lènd
+SFX Y 0 -ik [iīíǐì]lènd
+SFX Y 0 ik [^iīíǐì]lènd
 
 SFX Z Y 4
 SFX Z y yàbol [^aeiou]y 
@@ -327,8 +332,8 @@ SFX 8 0 -gga g
 SFX 8 0 gga [^g]
 
 SFX a Y 2
-SFX S 0 es [cçčĉqsšŝxzžẑjŧđ]
-SFX S 0 s [^cçčĉqsšŝxzžẑjŧđ]
+SFX a 0 es [cçčĉsšŝzžẑ]
+SFX a 0 s [^cçčĉsšŝzžẑ]
 
 SFX b Y 9
 SFX b 0 ed .
@@ -345,8 +350,8 @@ SFX c Y 1
 SFX c 0 zo .
 
 SFX d Y 14
-SFX d 0 eiçion ais
-SFX d 0 eiçions ais
+SFX d ais eiçion ais
+SFX d ais eiçions ais
 SFX d 0 eiçion [^bdpst]
 SFX d 0 eiçions [^bdpst]
 SFX d 0 içion dd
@@ -498,10 +503,9 @@ SFX y 0 i [^iīíǐì]
 SFX z Y 2
 SFX z 0 ö [^t]
 SFX z t čö t
-
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
-REP 141
+REP 142
 REP -- -
 REP cat	 keiç
 REP ing	 iŋ
@@ -512,6 +516,7 @@ REP er	 èr
 REP ā	 èr
 REP s    ç
 REP tion çion
+REP syón çion
 REP ción çion
 REP re	 rī
 REP pre	 pri
@@ -643,4 +648,3 @@ REP y ŋ
 REP zh ẑ
 REP zh ž
 REP zr ẑ
-
