@@ -235,8 +235,10 @@ Yusiŋ R 0.2.49.20150501 vörçion gut 2015-05-01.
 
 *Ùpdeit from v.49:
 *# -lènd + -ik/-iš
+*Ùpdeit from v.47:
+# Ädd REP er/èr/ā
 *Ùpdeit from v.46:
-*# araund 10 gè REP in haiher praioriti riordèred tu top.
+*# araund 10 gè REP in haiĥer praioriti riordèred tu top.
 *Ùpdeit from v.45: (Mwu)
 *Ùpdeit from v.44:
 *# ädded REP kv --> kw

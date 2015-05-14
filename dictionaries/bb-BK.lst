@@ -46,6 +46,7 @@ absolutisùmik
 äbsträkten
 äbsträktiŋ
 äbsträkts
+azumo
 abyus
 abyusā
 abyusās
@@ -324,10 +325,10 @@ akkyus
 akkyused
 akkyusen
 akkyusiŋ
-àkompàni
-àkompànied
-àkompànien
-àkompàniŋ
+àkkompàni
+àkkompànied
+àkkompànien
+àkkompàniŋ
 àkompaund
 àkompaunded
 àkompaunden
@@ -499,6 +500,7 @@ animeitiŋ
 änimols
 Änjèla
 Ankara
+Ankaraik
 ankĥor
 ankĥors
 annauns
@@ -781,7 +783,7 @@ Atlantik
 ättendiŋ
 ättitud
 ättituds
-Attorny
+ättorny
 ätträkçion
 ätträkçions
 ätträkt
@@ -1048,7 +1050,8 @@ biolojikol
 biolojikolli
 biomäkeniks
 biomas
-Biorhyŧùm
+biorhyŧùm
+biorhyŧùms
 biotekno
 bioteknoloji
 bioteknolojiā
@@ -1208,6 +1211,7 @@ brēd
 brein
 breins
 bridj
+bridjs
 brif
 brifkeis
 brifkeises
@@ -1252,6 +1256,7 @@ Budapest
 buddha
 buddhas
 bùdjèt
+bùdjètik
 bùffèr
 bùffèred
 bùffèren
@@ -1273,9 +1278,11 @@ būkmark
 būkmarks
 búköqi
 būks
-Bùktaiiš
+Bùktaik
+Bùktaiš
 Bùktailènd
 Bùlgaria
+Bùlgariaik
 Bùlgariaiš
 bùlk
 bullèt
@@ -1305,6 +1312,7 @@ bùtton
 bùttons
 butyiu
 Byelarux
+Byelaruxik
 Byelaruxiš
 byú
 byúed
@@ -1331,6 +1339,7 @@ Cāŋẑōu
 čännèl
 čännèls
 čäpol
+čäpols
 čäptā
 čäptās
 čarj
@@ -1988,14 +1997,10 @@ displeien
 displeiiŋ
 displeis
 displeismènt
-displeismènt
-displeismènts
 displeismènts
 dispüt
 dispüts
 dispyut
-dispyut
-dispyuts
 dispyuts
 dissiplin
 dissiplins
@@ -3519,9 +3524,11 @@ harmonaiçions
 harmonais
 harmonaised
 harmonaiseiçion
+harmonaiseiçions
 harmonaisen
 harmonaisiŋ
 harmoni
+harmonik
 hārt
 hārts
 Harumi
@@ -3942,6 +3949,8 @@ ikspörtaiçion
 ikspörtaiçions
 ikspörtais
 ikspörtaised
+ikspörtaiseiçion
+ikspörtaiseiçions
 ikspörtaisen
 ikspörtaisiŋ
 iksporteiçion
@@ -3989,6 +3998,8 @@ ikstörnolaiçion
 ikstörnolaiçions
 ikstörnolais
 ikstörnolaised
+ikstörnolaiseiçion
+ikstörnolaiseiçions
 ikstörnolaisen
 ikstörnolaisiŋ
 ikstörnolli
@@ -4084,6 +4095,7 @@ imeijiŋ
 imeijs
 img
 imiteiçion
+imiteiçions
 imiteit
 imiteited
 imiteiten
@@ -4108,6 +4120,8 @@ impenden
 impendiŋ
 implai
 implaied
+implaieiçion
+implaieiçions
 implaien
 implaiiŋ
 implaikeiçion
@@ -6827,6 +6841,7 @@ netizens
 nets
 netwörk
 netwörkfiltèrā
+netwörkfiltèrās
 netwörkiŋ
 netwörks
 Ŋ
@@ -6937,6 +6952,7 @@ noises
 Nokia
 non
 Nonhyòn
+Norlik
 Norliš
 Norllènd
 normol
@@ -7536,7 +7552,13 @@ pàusiŋ
 pawā
 pawāšift
 pawā-on
+pawāed-on
+pawāen-on
+pawāiŋ-on
 pawā-ùp
+pawāed-ùp
+pawāen-ùp
+pawāiŋ-ùp
 pawāwindow
 pawāwindows
 pawdā
@@ -7747,6 +7769,7 @@ Pol
 poliçi
 poliçis
 polis
+Polik
 Poliš
 polisoffisā
 polisoffisās
@@ -7769,10 +7792,10 @@ polynomiols
 pomegranate
 pop
 popdawn
-Popkùlčör
+popkùlčör
 popmusik
 popmusika
-popùp
+pop-ùp
 popyular
 popyulariti
 popyuleiçion
@@ -8052,7 +8075,12 @@ pripenden
 pripendiŋ
 prirīkwair
 prirīkwaired
+prirīkwaireiçion
+prirīkwaireiçionol
+prirīkwaireiçionolli
+prirīkwaireiçions
 prirīkwairen
+prirīkwairiŋ
 prirīkwairmènt
 prirīkwairmènt
 prirīkwairmènts
@@ -10207,7 +10235,6 @@ syllàbùs
 Symantec
 Symäntek
 symbòl
-symbòl
 symbòls
 symbòlik
 symbòls
@@ -10948,7 +10975,6 @@ välideiten
 välideitiŋ
 välideitiŋli
 välideitiŋs
-välīs
 välley
 välleys
 välyu
@@ -10958,6 +10984,8 @@ välyuaiçionolli
 välyuaiçions
 välyuais
 välyuaised
+välyuaiseiçion
+välyuaiseiçions
 välyuaisen
 välyuaisiŋ
 välyueiçion
@@ -11594,4 +11622,3 @@ zúŋrǔi
 zúŋzùk
 zünsek
 ẑǔyào
-

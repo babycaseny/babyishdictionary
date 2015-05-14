@@ -4,6 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -19,6 +20,7 @@
 
 int main(int argc, char** argv)
 {
+
   int i, j, k, n;
   int rl, p , nwl;
   int al;
@@ -145,7 +147,7 @@ int main(int argc, char** argv)
                numwords++;
                n = 0;
                if (al)
-		 expand_rootword(nword,nwl,as);
+		 expand_rootword(nword,nwl,as,al);
                for (k=0; k<numwords; k++) {
 		 if (lookup(wlist[k].word)) n++;
                  free(wlist[k].word);
@@ -235,10 +237,19 @@ int parse_aff_file(FILE * afflst)
                     case 1: { achar = *piece; break; }
                     case 2: { if (*piece == 'Y') ff = XPRODUCT; break; }
                     case 3: { numents = atoi(piece); 
-                              ptr = malloc(numents * sizeof(struct affent));
-                              ptr->achar = achar;
-                              ptr->xpflg = ff;
-	                      fprintf(stderr,"parsing %c entries %d\n",achar,numents);
+                              if ((numents < 0) ||
+                                  ((SIZE_MAX/sizeof(struct affent)) < numents))
+                              {
+                                 fprintf(stderr,
+                                     "Error: too many entries: %d\n", numents);
+                                 numents = 0;
+                              } else {
+                                 ptr = malloc(numents * sizeof(struct affent));
+                                 ptr->achar = achar;
+                                 ptr->xpflg = ff;
+                                 fprintf(stderr,"parsing %c entries %d\n",
+                                         achar,numents);
+                              }
                               break;
                             }
 		    default: break;
@@ -407,7 +418,7 @@ void pfx_chk (const char * word, int len, struct affent* ep, int num)
 {
     struct affent *     aent;
     int			cond;
-    int	tlen;
+    int			tlen;
     struct hentry *	hent;
     unsigned char *	cp;		
     int			i;
@@ -636,7 +647,7 @@ void add_affix_char(struct hentry * ep, char ac)
   int i;
   char * tmp;
   if (ep->affstr == NULL) {
-     ep->affstr = (char *) malloc(2);
+     ep->affstr = (char *) malloc(2*sizeof(char));
      *(ep->affstr) = ac;
      *((ep->affstr)+1) = '\0';
      return;
@@ -644,7 +655,7 @@ void add_affix_char(struct hentry * ep, char ac)
   al = strlen(ep->affstr);
   for (i=0; i< al; i++)
     if (ac == (ep->affstr)[i]) return;
-  tmp = calloc(al+2,1);
+  tmp = calloc((al+2),sizeof(char));
   memcpy(tmp,ep->affstr,(al+1));
   *(tmp+al) = ac;
   *(tmp+al+1)='\0';
@@ -659,7 +670,7 @@ void pfx_add (const char * word, int len, struct affent* ep, int num)
 {
     struct affent *     aent;
     int			cond;
-    int	tlen;
+    int			tlen;
     unsigned char *	cp;		
     int			i;
     char *              pp;
@@ -748,7 +759,7 @@ void suf_add (const char * word, int len, struct affent * ep, int num)
 
 
 
-int expand_rootword(const char * ts, int wl, const char * ap)
+int expand_rootword(const char * ts, int wl, const char * ap, int al)
 {
     int i;
     int j;
@@ -825,9 +836,9 @@ char * mystrdup(const char * s)
 {
   char * d = NULL;
   if (s) {
-    int sl = strlen(s)+1;
-    d = (char *) malloc(sl);
-    if (d) memcpy(d,s,sl);
+    int sl = strlen(s);
+    d = (char *) malloc(((sl+1) * sizeof(char)));
+    if (d) memcpy(d,s,((sl+1)*sizeof(char)));
   }
   return d;
 }
