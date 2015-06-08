@@ -46,7 +46,6 @@ absolutisùmik
 äbsträkten
 äbsträktiŋ
 äbsträkts
-azumo
 abyus
 abyusā
 abyusās
@@ -253,12 +252,17 @@ aikons
 ailènd
 ailènd-grūps
 ailènds
+äim
+äimed
+äimen
+äimiŋ
 ais
 Aiša
 Aišas
 aisen
 aisi
 Aisllènd
+Aisllèndik
 Aisllèndiš
 aisoleiçion
 aisoleiçions
@@ -279,6 +283,7 @@ aiswōms
 aitèm
 aitèms
 aivi
+akademi
 akademik
 akademikol
 akademikoli
@@ -290,7 +295,10 @@ akkauntā
 akkauntās
 akkauntiŋ
 akkaunts
-akkompàni
+àkkompàni
+àkkompànied
+àkkompànien
+àkkompàniŋ
 akkompliš
 akkomplišmènt
 akkord
@@ -325,10 +333,6 @@ akkyus
 akkyused
 akkyusen
 akkyusiŋ
-àkkompàni
-àkkompànied
-àkkompànien
-àkkompàniŋ
 àkompaund
 àkompaunded
 àkompaunden
@@ -829,6 +833,7 @@ ayu
 Azärbayjan
 Azärbayjanik
 Azärbayjaniš
+azumo
 äzzol
 äzzols
 B
@@ -1038,6 +1043,7 @@ bind
 biŋ
 bīns
 bio
+biodaivörsiti
 biofisiks
 biografi
 biografik
@@ -1142,8 +1148,12 @@ Bolivia
 bōlo
 bōlobau
 bols
+bond
 Bondai Bīč
 Bondai Jùnkçion
+bondiŋ
+bondiŋs
+boneij
 boŋ
 bonùs
 bopomofo
@@ -1279,8 +1289,8 @@ būkmarks
 búköqi
 būks
 Bùktaik
-Bùktaiš
 Bùktailènd
+Bùktaiš
 Bùlgaria
 Bùlgariaik
 Bùlgariaiš
@@ -2447,6 +2457,8 @@ enkauntèren
 enkauntèriŋ
 enkoud
 enkoudā
+enkoudàbol
+enkoudàbolili
 enkoudās
 enkouded
 enkouden
@@ -3204,6 +3216,7 @@ glori
 glorifai
 glorifaied
 glorifaien
+glukos
 glūm
 glūtameit
 glūtamik
@@ -3529,6 +3542,8 @@ harmonaisen
 harmonaisiŋ
 harmoni
 harmonik
+harmonikā
+harmonikās
 hārt
 hārts
 Harumi
@@ -3590,6 +3605,7 @@ helŧiest
 helŧstùdis
 ĥemikol
 ĥemistri
+ĥemistrikol
 Hénán
 Hěŋfā
 heriteij
@@ -4321,6 +4337,12 @@ insekt
 insekted
 insekten
 insektiŋ
+insekyur
+insekyured
+insekyuren
+insekyuriŋ
+insekyuriti
+insekyurli
 insomnia
 insörçion
 insörçions
@@ -4522,6 +4544,7 @@ involveiçionolli
 involveiçions
 involven
 involviŋ
+iodin
 IP
 iPad
 IPCop
@@ -4624,6 +4647,7 @@ jenerik
 jenerol
 jenerolli
 Jennifèr 
+Jènre
 Jermany
 Jermanyik
 Jermanyiš
@@ -4669,6 +4693,8 @@ jobs
 Joil
 join
 joined
+joinen
+joiniŋ
 joint
 joints
 Jölört
@@ -5721,6 +5747,9 @@ kùppolaisen
 kùppolaisiŋ
 kùppolen
 kùps
+Kurd
+Kurdik
+Kurdiš
 kurīmu
 kurious
 kuš
@@ -6952,9 +6981,9 @@ noises
 Nokia
 non
 Nonhyòn
-Norlik
-Norliš
-Norllènd
+Norik
+Noriš
+Norlènd
 normol
 normolli
 nörs
@@ -6962,6 +6991,7 @@ nörsā
 nörsās
 nörsiŋ
 norŧ
+norŧik
 not
 noteiçion
 nōtī
@@ -7019,6 +7049,9 @@ nùmbèrolojiās
 Nunhyòn
 Nusaantara
 nyuro
+nyuroloji
+nyurolojiā
+nyurolojiās
 nyutriçion
 nyutriçionol
 O
@@ -7550,15 +7583,15 @@ pàused
 pàusen
 pàusiŋ
 pawā
-pawāšift
-pawā-on
 pawāed-on
-pawāen-on
-pawāiŋ-on
-pawā-ùp
 pawāed-ùp
+pawāen-on
 pawāen-ùp
+pawāiŋ-on
 pawāiŋ-ùp
+pawā-on
+pawāšift
+pawā-ùp
 pawāwindow
 pawāwindows
 pawdā
@@ -7765,12 +7798,13 @@ poisònùs
 poket
 pokets
 Pokfīld
-Pol
 poliçi
 poliçis
-polis
 Polik
+polis
 Poliš
+polisäkĥaraid
+polisäkĥaraids
 polisoffisā
 polisoffisās
 polissteiçion
@@ -7911,6 +7945,15 @@ postempten
 postemptiŋ
 posten
 postiŋ
+postinstol
+postinstolā
+postinstolàbol
+postinstolās
+postinstoled
+postinstoleiçion
+postinstoleiçions
+postinstolen
+postinstoliŋ
 postkonfig
 postkonfigyur
 postkonfigyured
@@ -8036,6 +8079,15 @@ priföriŋ
 prihistòri
 prihistòrik
 prihistòrikol
+priinstol
+priinstolā
+priinstolàbol
+priinstolās
+priinstoled
+priinstoleiçion
+priinstoleiçions
+priinstolen
+priinstoliŋ
 prikonfig
 prikonfigyur
 prikonfigyured
@@ -8082,8 +8134,6 @@ prirīkwaireiçions
 prirīkwairen
 prirīkwairiŋ
 prirīkwairmènt
-prirīkwairmènt
-prirīkwairmènts
 prirīkwairmènts
 pririkwesçion
 pririkwesçionol
@@ -9113,6 +9163,8 @@ saized
 saizen
 saizes
 saiziŋ
+säkĥaraid
+säkĥaraids
 salad
 Ŝaleŋ
 salmon
@@ -9253,6 +9305,7 @@ selenās
 selens
 self
 self-estīm
+selfiš
 self-männeij
 self-männeijmènt
 seliŋ
@@ -9354,6 +9407,7 @@ si
 ŝī
 sibliŋ
 sibliŋs
+sibùtsi
 Sìĉuān
 sicueiçion
 sicueiçionol
@@ -9907,6 +9961,7 @@ ständed
 ständen
 ständiŋ
 starč
+starči
 stärkeis
 start
 started
@@ -10173,6 +10228,7 @@ sùppressed
 sùppressen
 sùppressiŋ
 Surinam
+Surinamik
 sùspekçion
 sùspekçions
 sùspekçiùs
@@ -10235,7 +10291,6 @@ syllàbùs
 Symantec
 Symäntek
 symbòl
-symbòls
 symbòlik
 symbòls
 symptòm
@@ -11571,6 +11626,7 @@ zíkärots
 Zīländ
 Zīländā
 Zīländās
+Zīländik
 zip
 .zip
 zǐp
