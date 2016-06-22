@@ -335,8 +335,8 @@ SFX 8 0 -gga g
 SFX 8 0 gga [^g]
 
 SFX a Y 2
-SFX a 0 es [cçčĉsšŝzžẑ]
-SFX a 0 s [^cçčĉsšŝzžẑ]
+SFX a 0 es [cçčĉqsšŝxzžẑjŧđ]
+SFX a 0 s [^cçčĉqsšŝxzžẑjŧđ]
 
 SFX b Y 9
 SFX b 0 ed .
