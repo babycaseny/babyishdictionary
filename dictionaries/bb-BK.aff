@@ -1,12 +1,12 @@
 # Affix file Babyish Dictionary for Mozilla
-# Copyright (c) 2007-2015, Tom K. C. Chiu
+# Copyright (c) 2007-2016, Tom K. C. Chiu
 # Built from scratch. Released under the GNU General Public License
 # Please see README.txt and license.txt for further information.
 # Online sources: 
 # http://github.com/babycaseny/babyishdictionary/blob/master/dictionaries/bb-BK.aff
 # http://babyish.wikia.com/wiki/Babyish_spel%C4%8Dek%C4%81/bb.aff
 #
-# R 0.2.49.20150501, 2015-05-01
+# R 0.2.50.20160701, 2016-07-01
 # R36:
 # 1. Fiksen sùffiks 'd' dè difaineiçion: -çion(s)
 # 2. Ädd c / k konvörçion
@@ -33,6 +33,9 @@
 # R49:
 # 1. Modifai -lènd + -ik/-iš dè biheivior
 # 2. Ädd -ais + -çion --> -eiçion
+# 3. Ädd REP syòn --> çion
+# R50:
+# 1. Ädd -ùs + -ik --> -ik
 #
 SET UTF-8
 
@@ -282,13 +285,15 @@ SFX W n llùn n
 PFX X Y 1
 PFX X 0 di .
 
-SFX Y Y 6
-SFX Y 0 š [iīíǐì]
-SFX Y 0 k [iīíǐì]
+SFX Y Y 8
+SFX Y 0 -iš [iīíǐì]
 SFX Y 0 iš [^iīíǐì]
+SFX Y 0 -iš [iīíǐì]lènd
+SFX Y 0 iš [^iīíǐì]lènd
+SFX Y 0 -ik [iīíǐì]
 SFX Y 0 ik [^iīíǐì]
-SFX Y lènd iš lènd
-SFX Y lènd ik lènd
+SFX Y 0 -ik [iīíǐì]lènd
+SFX Y 0 ik [^iīíǐì]lènd
 
 SFX Z Y 4
 SFX Z y yàbol [^aeiou]y 
@@ -330,8 +335,8 @@ SFX 8 0 -gga g
 SFX 8 0 gga [^g]
 
 SFX a Y 2
-SFX S 0 es [cçčĉqsšŝxzžẑjŧđ]
-SFX S 0 s [^cçčĉqsšŝxzžẑjŧđ]
+SFX a 0 es [cçčĉsšŝzžẑ]
+SFX a 0 s [^cçčĉsšŝzžẑ]
 
 SFX b Y 9
 SFX b 0 ed .
@@ -348,8 +353,8 @@ SFX c Y 1
 SFX c 0 zo .
 
 SFX d Y 14
-SFX d 0 eiçion ais
-SFX d 0 eiçions ais
+SFX d ais eiçion ais
+SFX d ais eiçions ais
 SFX d 0 eiçion [^bdpst]
 SFX d 0 eiçions [^bdpst]
 SFX d 0 içion dd
@@ -422,12 +427,13 @@ SFX m 0 fol .
 SFX n Y 1
 SFX n 0 bu .
 
-SFX o Y 5
-SFX o 0 k [iīíǐì]
-SFX o 0 ik [^iīíǐì]
-SFX o èn enik èn
-SFX o àn änik àn
-SFX o lènd ik lènd
+SFX o Y    6
+SFX o 0    k    [iīíǐì]
+SFX o 0    ik   [^iīíǐì]
+SFX o èn   enik èn
+SFX o àn   änik àn
+SFX o lènd ik   lènd
+SFX o ùs   ik   ùs
 
 SFX p Y 6
 SFX p 0 loji .
@@ -437,31 +443,31 @@ SFX p 0 lojik .
 SFX p 0 lojikol .
 SFX p 0 lojikolli .
 
-SFX q Y 24
-SFX q 0 tais a 
-SFX q 0 ais [^l]
-SFX q l ilais [^aeiou]l
-SFX q l ais [aeiou]l
-SFX q 0 taises a 
-SFX q 0 aises [^l] 
-SFX q l ilaises [^aeiou]l
-SFX q l aises [aeiou]l
-SFX q ùm ais ùm 
-SFX q 0 ais [^ù]m 
-SFX q s s ais 
-SFX q 0 ais [^i]s
-SFX q l ilaised [^aeiou]l
-SFX q l aised [aeiou]l
-SFX q ùm aised ùm 
-SFX q 0 aised [^ù]m 
-SFX q s sed ais 
-SFX q 0 aised [^i]s
-SFX q l ilaisiŋ [^aeiou]l 
-SFX q l aisiŋ [aeiou]l 
-SFX q ùm aisiŋ ùm 
-SFX q 0 aisiŋ [^ù]m 
-SFX q s siŋ ais 
-SFX q 0 aisiŋ [^i]s
+SFX q Y  24
+SFX q 0  tais    a 
+SFX q 0  ais     [^l]
+SFX q l  ilais   [^aeiou]l
+SFX q l  ais     [aeiou]l
+SFX q 0  taises  a 
+SFX q 0  aises   [^l] 
+SFX q l  ilaises [^aeiou]l
+SFX q l  aises   [aeiou]l
+SFX q ùm ais     ùm 
+SFX q 0  ais     [^ù]m 
+SFX q s  s       ais 
+SFX q 0  ais     [^i]s
+SFX q l  ilaised [^aeiou]l
+SFX q l  aised   [aeiou]l
+SFX q ùm aised   ùm 
+SFX q 0  aised   [^ù]m 
+SFX q s  sed     ais 
+SFX q 0  aised   [^i]s
+SFX q l  ilaisiŋ [^aeiou]l 
+SFX q l  aisiŋ   [aeiou]l 
+SFX q ùm aisiŋ   ùm 
+SFX q 0  aisiŋ   [^ù]m 
+SFX q s  siŋ     ais 
+SFX q 0  aisiŋ   [^i]s
 
 SFX r Y 3
 SFX r s ol ks
@@ -501,7 +507,6 @@ SFX y 0 i [^iīíǐì]
 SFX z Y 2
 SFX z 0 ö [^t]
 SFX z t čö t
-
 # Some letters that should be replacable and have higher priority
 # Don't always sorting alphabetically.
 REP 142
@@ -647,3 +652,4 @@ REP y ŋ
 REP zh ẑ
 REP zh ž
 REP zr ẑ
+  
